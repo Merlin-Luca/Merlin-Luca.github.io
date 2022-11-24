@@ -16,23 +16,26 @@
     <nav>
         <div class="navbar">
           <div class="container nav-container">
-              <input class="checkbox" type="checkbox" name="" id="" />
+              <input class="checkbox" type="checkbox" name="" id="checkbox"/>
               <div class="hamburger-lines">
                 <span class="line line1"></span>
                 <span class="line line2"></span>
                 <span class="line line3"></span>
               </div>  
-            <div class="logo">
-              <h1>LOGO</h1>
-            </div>
-            <div class="menu-items">
-              <li><a href="#img_acceuil">Acceuil</a></li>
-              <li><a href="#a_propos">A propos</a></li>
-              <li><a href="#competences">Compétences</a></li>
-              <li><a href="#formations">Formation</a></li>
-              <li><a href="#contact">Contact</a></li>
+            
+            <div id="menu-items" class="menu-items">
+              <ul>
+                <li><a href="#img_acceuil">Acceuil</a></li>
+                <li><a href="#a_propos">A propos</a></li>
+                <li><a href="#mes_competences">Compétences</a></li>
+                <li><a href="#formations">Formation</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
             </div>
           </div>
+          <div class="logo">
+              <h1 class="padding-top-8px">LOGO</h1>
+            </div>
         </div>
       </nav>
 
@@ -41,102 +44,119 @@
         <h2>Better Future</h2>
     </div>
     <!-- Séparation -->
-    <div class="separation_basse"></div>
+    
 
     <!--A propos de moi-->
+    <div class="separation"></div>
     <div class="a_propos" id="a_propos">
         <img src="Ressources/doomguys.png" alt="" class="moi">
         <h2>A propos</h2>
         <p>Mes passions : Boxe, Gaming, Musique (...)</p>
     </div>
 
+  <div id="exp_user">
     <!-- Séparation -->
     <div class="separation_haute"></div>
-
     <!--Citation } Caroussel ?-->
     <div class="exp_user">
-      <img src="./Ressources/test/website-development.jpg" alt="" srcset="" style="max-width: 100%;">
+      <img src="./Ressources/test/website-development.jpg">
       <h1>L'expériance utilisateur</h1>
       <p>Tout est pensé pour une visite agréable et une très bonne réactiviter</p>
     </div>
+  </div>
 
-    <!-- Séparation -->
-    <div class="separation_basse"></div>
+  <div class="separation"></div>
+    <div id="mes_competences">
+        <h1 style="text-align: center;">Mes compétences :</h1>
+        <div class="barre_progression">
+        <!-- Séparation -->
+        <div class="separation_basse"></div>
+        <h1>En cours :</h1>
+          <div class="container-html" role="progressbar">
+            <span class="before">
+              <i class="fab fa-html5 fa-2x"></i>&nbsp; HTML<i class="after">100%</i>
+            </span>
+          </div>
 
-    <!-- Compétences -->  <!--Ajout barre progression-->
-    <h2 class="titre_competences">Mes compétences</h2>
-    <div class="competences" id="competences">    
-        <div class="items1">
-        <img src="Ressources/html.png" alt=""></div>
-        <div class="itemsArticle1">
-            <h5>HTML - 100%</h5>
-            </br>
-            <p>Index</p>
-            <p>Tableau</p>
-            <p>Formulaire</p>
-        </div>
+          <div class="container-css" role="progressbar">
+            <span class="before">
+              <i class="fab fa-css3-alt fa-2x"></i>&nbsp; CSS<i class="after">85%</i>
+            </span>
+          </div>
 
-        <div class="items2">
-        <img src="Ressources/file.png" alt=""></div>
-        <div class="itemsArticle2">
-            <h5>CSS - 80%</h5>
-            </br>
-            <p>Bootstrap</p>
-            <p>SCSS / SASS</p>
-            <p>Responsive</p>
-            <p>Mobile First</p>
-            <p>Animation</p>
-            <p>...</p>
-        </div>
+          <div class="container-sass" role="progressbar">
+            <span class="before">
+              <i class="fa-brands fa-sass padding-top-8px"></i>&nbsp; SASS<i class="after">80%</i>
+            </span>
+          </div>
 
-        <div class="items3">
-        <img src="Ressources/js.png" alt=""></div>
-        <div class="itemsArticle3">
-            <h5>JS - (En cours)</h5>
-            </br>
-            <p>DOM</p>
-            <p>Animation</p>
-            <p>Regex</p>
-            <p>jQuery</p>
-            <p>Node.js</p>
-            <p>Angular</p>
-        </div>
+          <div class="container-js" role="progressbar">
+            <span class="before">
+              <i class="fab fa-js fa-2x"></i>&nbsp; JavaScript<i class="after">50%</i>
+            </span>
+          </div>
+          <!-- Séparation -->
+        <div class="separation_basse"></div>
+          <h1>Futurement : </h1>
+
+            <div class="container-php" role="progressbar">
+              <span class="before">
+                <i class="fa-brands fa-php padding-top-8px"></i>&nbsp; PHP<i class="after">?%</i>
+              </span>
+            </div>
+
+            <div class="container-mysql" role="progressbar">
+              <span class="before">
+                <i class="fa-solid fa-database padding-top-8px"></i>&nbsp; MySQL<i class="after">?%</i>
+              </span>
+            </div>
+
+            <div class="container-nodejs" role="progressbar">
+              <span class="before">
+                <i class="fa-brands fa-node padding-top-8px"></i>&nbsp; NodeJS<i class="after">?%</i>
+              </span>
+            </div>
+
+            <div class="container-angular" role="progressbar">
+              <span class="before">
+                <i class="fa-brands fa-angular padding-top-8px"></i>&nbsp; Angular<i class="after">?%</i>
+              </span>
+            </div>
+          </div>
     </div>
-    <!-- Séparation -->
-    <div class="separation_basse"></div>
-
-
+    <div class="separation"></div>
     <!--Citation } Caroussel ?-->
     <div class="testing">
       <img src="./Ressources/test/banniere-testing.png" alt="" srcset="" style="max-width: 100%;">
       <h1>Le testing</h1>
       <p>Les meilleurs pratique de tests mise en pratique régulièrement pour un code fonctionnel et durable</p>
     </div>
-    <!-- Séparation -->
-    <div class="separation_basse"></div>
 
     <!-- Liste des formations -->
 
+    <div class="separation"></div>
     <div class="formations" id="formations">
         <div class="mes_formations"><h2>Mes Formations</h2></div>
-        <div class="formation1"><h2>AFCI</h2><h3>Développeur Fullstacks</h3><p>Divers projets</p></div>
-        <div class="formation2"><h2>M2i</h2><h3>Incubateur du numérique</h3><p>Divers projets</p></div>
-        <div class="formation3"><h2>Simplon</h2><h3>Développeur Front-End</h3><p>Divers projets</p></div>
+        <div class="formation1"><h2>AFCI</h2><h3>Développeur Fullstacks</h3><p>Maitrise du javascript, Maitrise de PHP, spécialisation Angular/Node.js/MySQL</p></div>
+        <div class="formation2"><h2>M2i</h2><h3>Incubateur du numérique</h3><p>Découverte react, node.js, php et composer</p></div>
+        <div class="formation3"><h2>Simplon</h2><h3>Développeur Front-End</h3><p>Maquette, design, github, (...)</p></div>
+        <!--Rajouter texte au survol-->
     </div>
 
+    <div class="cv-container">
     <!-- Séparation -->
-    <div class="separation_basse"></div>
+    <div class="separation"></div>
     <!--Carte Lille-->
     <div class="carte">
         <i class="fa-solid fa-location-dot map"></i>
         <h2>Disponible pour travailler sur l'ensemble de la métropole lilloise</h2>
         <p>Mon CV au format PDF :</p>
-        <img src="Ressources/carte.png" alt="">
+        <a href="./CV.pdf" target="_blank">
+        <i class="fa-regular fa-file-pdf cv"></i></a>
     </div>
     <!-- Séparation -->
-    <div class="separation_basse"></div>
-    <!-- Séparation -->
     <div class="separation"></div>
+    </div>
     <!--Footer avec logo + contact-->
     <footer>
         <div class="contact" id="contact">
@@ -144,9 +164,9 @@
         <p>Vous souhaitez me contacter ?</br> Écrivez-moi par mail à cette adresse : </br> merlinlucapro@gmail.com </br>Et je veillerai à vous répondre dans les plus brefs délais.</br>Vous pouvez également me retrouver sur les sites suivants :</p>
         </div>
         <div class="fontawesome">
-            <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
-            <div class="linkedin"></i><i class="fa-brands fa-linkedin"></i></div>
-            <div class="github"><i class="fa-brands fa-github"></i></div>
+          <a href="https://github.com/"><i class="fa-brands fa-twitter twitter"></i></a>
+          <a href="https://github.com/"><i class="fa-brands fa-linkedin linkedin"></i></a>
+          <a href="https://github.com/"><i class="fa-brands fa-github github"></i></a>
         </div>
     </footer>
     <!-- Séparation -->
@@ -154,10 +174,3 @@
 </div>
 </body>
 </html>
-
-<!--
-Des idées :
-Valeurs travail
-Ajouter mes projets +tard
-SASS / JS / PHP / (...)
--->
