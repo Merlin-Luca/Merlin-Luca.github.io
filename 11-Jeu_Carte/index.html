@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeu Carte</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="carte">
+        <span class="display_none">?</span>
+        <button id="display_none">Recommencer ?</button>
+    </div>
+
+    <div>
+        <p class="indice" style="color:white; font-size: 2.5rem;">Veuillez choisir un nombre entre 1 et 100, vous avez 7 essais<!-- Indication pointant sur le nombre donner --></p>
+    </div>
+
+    <div>
+        <input id="entries" type="number" name="number" max="100">
+    </div>
+    <div>
+        <input id="proposer" class="proposer" type="submit" value="Proposer ?">
+    </div>
+</body>
+</html>
