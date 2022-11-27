@@ -10,11 +10,13 @@
     <script src="./script.js" defer></script>
 </head>
 <body>
-<div>
-    <!-- Barre Nav -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- //////////////////////////////////////////////  NAV + BURGER  ///////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
 
     <nav>
-        <div class="navbar">
+        <div class="navbar"  id="acceuil">
           <div class="container nav-container">
               <input class="checkbox" type="checkbox" name="" id="checkbox"/>
               <div class="hamburger-lines">
@@ -25,45 +27,47 @@
             
             <div id="menu-items" class="menu-items">
               <ul>
-                <li><a href="#img_acceuil">Acceuil</a></li>
-                <li><a href="#a_propos">A propos</a></li>
-                <li><a href="#mes_competences">Compétences</a></li>
-                <li><a href="#formations">Formation</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><i class="fa-solid fa-cable-car"></i><a href="#acceuil">Accueil</a></li>
+                <li><i class="fa-solid fa-person-through-window"></i><a href="#a_propos">Qui suis-je ?</a></li>
+                <li><i class="fa-solid fa-person-snowboarding"></i><a href="#mes_competences">Mes Compétences</a></li>
+                <li><i class="fa-solid fa-house-chimney-user"></i><a href="#formations">Mes Formations</a></li>
+                <li><i class="fa-solid fa-mug-hot"></i><a href="#contact">Mes Contacts</a></li>
               </ul>
             </div>
           </div>
           <div class="logo">
-              <h1 class="padding-top-8px">LOGO</h1>
+              <img src="./Ressources/logo.png" alt="" srcset="" style="max-width: 50px;">
             </div>
         </div>
       </nav>
 
-    <!-- Image d'acceuil -->
-    <div class="img_acceuil" id="img_acceuil">
-        <h2>Better Future</h2>
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- ////////////////////////////////////////////// IMAGE_ACCEUIL ////////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div class="img_acceuil">
+        <h2>Merlin Luca<br>Développeur Fullstacks</h2>
     </div>
-    <!-- Séparation -->
     
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- ////////////////////////////////////////////////////  A PROPOS  /////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <!--A propos de moi-->
-    <div class="separation"></div>
     <div class="a_propos" id="a_propos">
-        <img src="Ressources/doomguys.png" alt="" class="moi">
-        <h2>A propos</h2>
-        <p>Mes passions : Boxe, Gaming, Musique (...)</p>
+        <p><i class="fa-regular fa-comment-dots" style="font-size: 3rem"></i>
+        <h2>Qui suis-je ?</h2>
+        <br>Je suis passionné par l'informatique, la photographie et cinéphile a mes heures perdues.</br>
+        <br>Après des années d'études en anthropologie, je me redirige vers un métier passions le développement web.</br>
+        <br>Des débuts en autodidacte en parrallèle de mes études m'ont donné cette envie.
+          Et le plaisir pris par cela m'a convaincu de ce choix.</br>
+        <br>Aujourd'hui je veux devenir un acteur du numérique pour un meilleur monde de demain, car pour moi il faut unir l'avenir du numérique et le future de l'environnement.</br>
+        </p>
     </div>
 
-  <div id="exp_user">
-    <!-- Séparation -->
-    <div class="separation_haute"></div>
-    <!--Citation } Caroussel ?-->
-    <div class="exp_user">
-      <img src="./Ressources/test/website-development.jpg">
-      <h1>L'expériance utilisateur</h1>
-      <p>Tout est pensé pour une visite agréable et une très bonne réactiviter</p>
-    </div>
-  </div>
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- //////////////////////////////////////////////  COMPÉTENCES  ////////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
   <div class="separation"></div>
     <div id="mes_competences">
@@ -72,27 +76,27 @@
         <!-- Séparation -->
         <div class="separation_basse"></div>
         <h1>En cours :</h1>
-          <div class="container-html" role="progressbar">
+          <div class="container-html progressbar" role="progressbar">
             <span class="before">
-              <i class="fab fa-html5 fa-2x"></i>&nbsp; HTML<i class="after">100%</i>
+              <i class="fab fa-html5 fa-2x"></i><span>&nbsp; HTML</span><i class="after"><span class="progressChargement"></span></i>
             </span>
           </div>
 
-          <div class="container-css" role="progressbar">
+          <div class="container-css progressbar" role="progressbar">
             <span class="before">
-              <i class="fab fa-css3-alt fa-2x"></i>&nbsp; CSS<i class="after">85%</i>
+              <i class="fab fa-css3-alt fa-2x"></i><span>&nbsp; CSS</span><i class="after"><span class="progressChargement"></span></i>
             </span>
           </div>
 
-          <div class="container-sass" role="progressbar">
+          <div class="container-sass progressbar" role="progressbar">
             <span class="before">
-              <i class="fa-brands fa-sass padding-top-8px"></i>&nbsp; SASS<i class="after">80%</i>
+              <i class="fa-brands fa-sass padding-top-8px"></i><span>&nbsp; SASS</span><i class="after"><span class="progressChargement"></span></i>
             </span>
           </div>
 
-          <div class="container-js" role="progressbar">
+          <div class="container-js progressbar" role="progressbar">
             <span class="before">
-              <i class="fab fa-js fa-2x"></i>&nbsp; JavaScript<i class="after">50%</i>
+              <i class="fab fa-js fa-2x"></i><span>&nbsp; JavaScript</span><i class="after"><span class="progressChargement"></span></i>
             </span>
           </div>
           <!-- Séparation -->
@@ -125,43 +129,63 @@
           </div>
     </div>
     <div class="separation"></div>
-    <!--Citation } Caroussel ?-->
-    <div class="testing">
-      <img src="./Ressources/test/banniere-testing.png" alt="" srcset="" style="max-width: 100%;">
-      <h1>Le testing</h1>
-      <p>Les meilleurs pratique de tests mise en pratique régulièrement pour un code fonctionnel et durable</p>
-    </div>
 
-    <!-- Liste des formations -->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- //////////////////////////////////////////////////  FORMATIONS //////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <div class="separation"></div>
-    <div class="formations" id="formations">
-        <div class="mes_formations"><h2>Mes Formations</h2></div>
-        <div class="formation1"><h2>AFCI</h2><h3>Développeur Fullstacks</h3><p>Maitrise du javascript, Maitrise de PHP, spécialisation Angular/Node.js/MySQL</p></div>
-        <div class="formation2"><h2>M2i</h2><h3>Incubateur du numérique</h3><p>Découverte react, node.js, php et composer</p></div>
-        <div class="formation3"><h2>Simplon</h2><h3>Développeur Front-End</h3><p>Maquette, design, github, (...)</p></div>
-        <!--Rajouter texte au survol-->
+    <div id="formations" class="mes_formations">
+      <div class="cards">
+            <i class="fa-solid fa-chess-king fa-4x"></i>
+            <h2>AFCI</h2><h3>Développeur Fullstacks</h3>
+            <p>Maitrise du javascript, Maitrise de PHP,  &amp;spécialisation Angular/Node.js/MySQL</p>
+      </div>
+      <i class="fa-solid fa-arrow-up fa-2x iDisparition"></i>
+      <div class="cards">
+            <i class="fa-solid fa-chess-knight fa-4x"></i>
+            <h2>M2i</h2>
+            <h3>Incubateur du numérique</h3>
+            <p>Découverte react, node.js, &amp; php et composer</p>
+      </div>
+      <i class="fa-solid fa-arrow-up fa-2x iDisparition"></i>
+      <div class="cards">
+            <i class="fa-solid fa-chess-pawn fa-4x"></i>
+            <h2>Simplon</h2>
+            <h3>Développeur Front-End</h3>
+            <p>Maquette, design, github, &amp;(...)</p>
+      </div>
     </div>
+    
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- ////////////////////////////////////////////////////  CV  ///////////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
     <div class="cv-container">
-    <!-- Séparation -->
     <div class="separation"></div>
     <!--Carte Lille-->
     <div class="carte">
         <i class="fa-solid fa-location-dot map"></i>
-        <h2>Disponible pour travailler sur l'ensemble de la métropole lilloise</h2>
+        <h2>Je suis disponible pour travailler sur l'ensemble de la métropole lilloise.</h2>
         <p>Mon CV au format PDF :</p>
         <a href="./CV.pdf" target="_blank">
         <i class="fa-regular fa-file-pdf cv"></i></a>
     </div>
-    <!-- Séparation -->
     <div class="separation"></div>
     </div>
-    <!--Footer avec logo + contact-->
+
+ <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- /////////////////////////////////////////////////  FOOTER  ///////////////////////////////////////////////////////////////-->
+<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
     <footer>
-        <div class="contact" id="contact">
-        <h2>Me Contacter</h2>
-        <p>Vous souhaitez me contacter ?</br> Écrivez-moi par mail à cette adresse : </br> merlinlucapro@gmail.com </br>Et je veillerai à vous répondre dans les plus brefs délais.</br>Vous pouvez également me retrouver sur les sites suivants :</p>
+        <div class="contact">
+        <!-- <i class="fa-solid fa-feather fa-4x"></i> -->
+        <h2 id="contact">Me Contacter <i class="fa-regular fa-circle-question" style="color: yellow;"></i></h2>
+        <br>Si vous souhaitez me contacter,
+        <br>Écrivez-moi par mail à cette adresse :</br>
+        <br>merlinlucapro@gmail.com</br>
+        <br>Et je vous répondrais dans les plus brefs délais.
+        <br>Vous pouvez également me retrouver sur les sites suivants :</p>
         </div>
         <div class="fontawesome">
           <a href="https://github.com/"><i class="fa-brands fa-twitter twitter"></i></a>
@@ -169,8 +193,6 @@
           <a href="https://github.com/"><i class="fa-brands fa-github github"></i></a>
         </div>
     </footer>
-    <!-- Séparation -->
     <div class="separation"></div>
-</div>
 </body>
 </html>
