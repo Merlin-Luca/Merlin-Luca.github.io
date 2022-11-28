@@ -2,138 +2,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    text-decoration: none;
 }
 #mes_competences, #formations, #contact, .carte, footer, .img_acceuil{
     font-family: "Poppins", sans-serif;
 }
-/*-------------------------------------------------DEBUT MENU NAV / BURGER ------------------------------------------------------ */
- 
-  
-  .navbar {
-    width: 100%;
-    box-shadow: 0 1px 4px rgba(31, 63, 94, 0.678);
-  }
-  
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 62px;
-  }
-  
-  .navbar .menu-items {
-    display: flex;
-  }
-  .navbar .nav-container li {
-    list-style: none;
-  }
-  
-  .navbar .nav-container a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500px;
-    font-size: 1.2rem;
-    padding: 0.7rem;
-  }
-  
-  .navbar .nav-container a:hover{
-      font-weight: bolder;
-      text-shadow: 1px 1px 2px rgb(4, 0, 255), 0 0 8px rgba(171, 180, 38, 0.733), 0 0 8px rgba(136, 148, 31, 0.788);
-      font-size: 1.2rem;
-  }
-  
-  .nav-container {
-    margin-top: -10px;
-    display: block;
-    position: relative;
-    height: 0px;
-  }
-  
-  .nav-container .checkbox {
-    position: fixed;
-    display: block;
-    height: 32px;
-    width: 50px;
-    top: 25px;
-    left: 85%;
-    z-index: 9;
-    opacity: 0;
-    cursor: pointer;
-  }
-  
-  .nav-container .hamburger-lines {
-    background-color: white;
-    padding: 5px;
-    outline: auto black;
-    display: block;
-    height: 26px;
-    width: 32px;
-    position: fixed;
-    top: 25px;
-    left: 85%;
-    z-index: 8;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  
-  .nav-container .hamburger-lines .line {
-    display: block;
-    height: 4px;
-    width: 100%;
-    border-radius: 10px;
-    background: #0e2431;
-  }
-  
-  .nav-container .hamburger-lines .line1 {
-    transform-origin: 0% 0%;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .nav-container .hamburger-lines .line2 {
-    transition: transform 0.2s ease-in-out;
-  }
-  
-  .nav-container .hamburger-lines .line3 {
-    transform-origin: 0% 100%;
-    transition: transform 0.4s ease-in-out;
-  }
-  
-  .navbar .menu-items {
-    z-index: 7;
-    padding-top: 120px;
-    background-color: rgb(46, 45, 45);
-    box-shadow: inset 0 0 20px rgb(2, 39, 19);
-    font-size: 10rem;
-    height: 100%;
-    width: 100%;
-    transform: translate(+150%);
-    display: flex;
-    flex-direction: column;
-    margin-left: -40px;
-    padding-left: 50px;
-    transition: transform 0.7s ease-in-out;
-    text-align: center;
-    position: fixed;
-  }
-  
-  .navbar .menu-items li {
-    margin-bottom: 1.2rem;
-    font-size: 1.5rem;
-    font-weight: 500;
-  }
-  
-  li > i{
-    color: rgba(221, 221, 61, 0.705);
-  }
-  .logo {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 1.2rem;
-    color: #0e2431;
-  }
-/*-------------------------------------------------FIN MENU NAV / BURGER ------------------------------------------------------ */
 
 .moi{
     box-shadow: -5px -5px 2px 1px rgba(21, 21, 22, 0.856);
@@ -150,17 +23,13 @@
 .img_acceuil > h2{
     color: white;
     z-index: 0;
-    font-size: 10vh;
+    font-size: 350%;
     text-align: center;
     position: absolute;
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 1px 1px 2px rgb(4, 0, 255), 0 0 8px rgba(171, 180, 38, 0.733), 0 0 8px rgba(136, 148, 31, 0.788);
-}
-.foret{
-    max-width: 100%;
-    min-height: 70vh;
 }
 
 li{
@@ -182,6 +51,7 @@ li.gauche{
     padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 60px;
     font-size: 25px;
     display: flex;
     flex-direction: column;
@@ -195,10 +65,11 @@ li.gauche{
     border-radius: 20px;
 }
 .a_propos > h2{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #013328;
 }
 .a_propos > p:last-child{
-    margin-bottom: 80px; 
+    margin-bottom: 30px; 
 }
 .map{
     font-size: 2rem;
@@ -305,12 +176,15 @@ footer{
     color: inherit;
 }
 .twitter:hover{
-    color: rgb(0, 153, 255);
+    transition: color 1s;
+    color: rgb(29, 155, 240);
 }
 .linkedin:hover{
-    color: rgb(0, 47, 255);
+    transition: color 1s;
+    color: #0a66c2;
 }
 .github:hover{
+    transition: color 1s;
     color: darkorange;
 }
 
@@ -426,7 +300,196 @@ i > span{
 url(./Ressources/facade-g656102781_1280.jpg) no-repeat center/cover fixed;
 }
 
+#acceuil_desktop{
+    scroll-margin-top: 100px;
+}
+#A_propos_desktop{
+    scroll-margin-top: 150px;
+}
+#formations_desktop{
+    scroll-margin-top: 200px;
+}
+#mes_competences_desktop{
+    scroll-margin-top: 100px;
+}
+#cv{
+    scroll-margin-top: 200px;
+}
+@media (max-width: 780px){
+    .desktop{
+        display: none;
+    }
+    .navbar {
+        width: 100%;
+        box-shadow: 0 1px 4px rgba(31, 63, 94, 0.678);
+      }
+      
+      .nav-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 62px;
+      }
+      
+      .navbar .menu-items {
+        display: flex;
+      }
+      .navbar .nav-container li {
+        list-style: none;
+      }
+      
+      .navbar .nav-container a {
+        text-decoration: none;
+        color: #ffffff;
+        font-weight: 500px;
+        font-size: 1.2rem;
+        padding: 0.7rem;
+      }
+      
+      .navbar .nav-container a:hover{
+          font-weight: bolder;
+          text-shadow: 1px 1px 2px rgb(4, 0, 255), 0 0 8px rgba(171, 180, 38, 0.733), 0 0 8px rgba(136, 148, 31, 0.788);
+          font-size: 1.2rem;
+      }
+      
+      .nav-container {
+        margin-top: -10px;
+        display: block;
+        position: relative;
+        height: 0px;
+      }
+      
+      .nav-container .checkbox {
+        position: fixed;
+        display: block;
+        height: 32px;
+        width: 50px;
+        top: 25px;
+        left: 85%;
+        z-index: 9;
+        opacity: 0;
+        cursor: pointer;
+      }
+      
+      .nav-container .hamburger-lines {
+        background-color: white;
+        padding: 5px;
+        outline: solid;
+        outline-color: rgb(14, 13, 13);
+        display: block;
+        height: 26px;
+        width: 32px;
+        position: fixed;
+        top: 25px;
+        left: 85%;
+        z-index: 8;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      
+      .nav-container .hamburger-lines .line {
+        display: block;
+        height: 4px;
+        width: 100%;
+        border-radius: 10px;
+        background: #0e2431;
+      }
+      
+      .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out;
+      }
+      
+      .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out;
+      }
+      
+      .navbar .menu-items {
+        z-index: 7;
+        padding-top: 120px;
+        background-color: rgb(46, 45, 45);
+        box-shadow: inset 0 0 20px rgb(2, 39, 19);
+        font-size: 10rem;
+        height: 100%;
+        width: 100%;
+        transform: translate(+150%);
+        display: flex;
+        flex-direction: column;
+        margin-left: -40px;
+        padding-left: 50px;
+        transition: transform 0.7s ease-in-out;
+        text-align: center;
+        position: fixed;
+      }
+      
+      .navbar .menu-items li {
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500;
+      }
+      
+      li > i{
+        color: rgba(221, 221, 61, 0.705);
+      }
+}
 @media (min-width: 800px){
+    .a_propos{
+        height: 550px;
+        padding-top: 20px;
+        padding-bottom: 80px;
+        padding-left: 250px;
+        padding-right: 250px;
+    }
+    .a_propos > p > i {
+        display: none;
+    }
+    .a_propos > h2{
+        margin-bottom: 80px;
+        padding-bottom: 10px;
+    }
+    .mobile{
+        display: none;
+    }
+    .cv-container{
+        height: 600px;
+    }
+    .carte>i{
+        padding-top: 50px;
+    }
+    body{
+        padding-top: 100px;
+    }
+    .desktop{
+        font-size: x-large;
+        border-bottom: 10px solid #013328;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        z-index: 10;
+    }
+    li> a{
+        color: #013328;
+        border-bottom: 0px solid #013328;
+        transition: font-weight 5s;
+    }
+    li > a:hover{
+        border-bottom: 2px solid #013328;
+        font-weight: bolder;
+        text-shadow: 0.5px 0.5px 1px rgb(4, 0, 255), 0 0 4px rgba(171, 180, 38, 0.733), 0 0 4px rgba(136, 148, 31, 0.788);
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
     .barre_progression{
         margin-left: 80px;
         margin-right: 80px;
@@ -446,8 +509,8 @@ url(./Ressources/facade-g656102781_1280.jpg) no-repeat center/cover fixed;
         min-height: 650px;
     }
     .mes_formations > .cards{
-        max-width: 300px;
-        min-width: 300px;
+        max-width: 250px;
+        min-width: 250px;
         min-height: 320px;
         max-height: 320px;
     }

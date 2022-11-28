@@ -15,7 +15,7 @@
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
 
-    <nav>
+    <nav class="mobile">
         <div class="navbar"  id="acceuil">
           <div class="container nav-container">
               <input class="checkbox" type="checkbox" name="" id="checkbox"/>
@@ -35,17 +35,25 @@
               </ul>
             </div>
           </div>
-          <div class="logo">
-              <img src="./Ressources/logo.png" alt="" srcset="" style="max-width: 50px;">
-            </div>
         </div>
+      </nav>
+
+      <nav class="desktop">
+          <ul>
+            <li><a href="#acceuil_desktop">Accueil</a></li>
+            <li><a href="#A_propos_desktop">Qui suis-je ?</a></li>
+            <li><a href="#mes_competences_desktop">Mes Compétences</a></li>
+            <li><a href="#formations_desktop">Mes Formations</a></li>
+            <li><a href="#cv">Mon CV</a></li>
+            <li><a href="#contact">Mes Contacts</a></li>
+          </ul>
       </nav>
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!-- ////////////////////////////////////////////// IMAGE_ACCEUIL ////////////////////////////////////////////////////////////-->
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <div class="img_acceuil">
+    <div id="acceuil_desktop"class="img_acceuil">
         <h2>Merlin Luca<br>Développeur Fullstacks</h2>
     </div>
     
@@ -53,23 +61,23 @@
 <!-- ////////////////////////////////////////////////////  A PROPOS  /////////////////////////////////////////////////////////-->
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
+    <div id="A_propos_desktop"></div>
     <div class="a_propos" id="a_propos">
-        <p><i class="fa-regular fa-comment-dots" style="font-size: 3rem"></i>
+        <p><i class="fa-regular fa-comment-dots" style="font-size: 3rem"></i></p>
         <h2>Qui suis-je ?</h2>
-        <br>Je suis passionné par l'informatique, la photographie et cinéphile a mes heures perdues.</br>
-        <br>Après des années d'études en anthropologie, je me redirige vers un métier passions le développement web.</br>
-        <br>Des débuts en autodidacte en parrallèle de mes études m'ont donné cette envie.
+        <p>Je suis passionné par l'informatique, la photographie et cinéphile a mes heures perdues.</p>
+        <p>Après des années d'études en anthropologie, je me redirige vers un métier passions le développement web.</p>
+        <p>Des débuts en autodidacte en parrallèle de mes études m'ont donné cette envie.
           Et le plaisir pris par cela m'a convaincu de ce choix.</br>
-        <br>Aujourd'hui je veux devenir un acteur du numérique pour un meilleur monde de demain, car pour moi il faut unir l'avenir du numérique et le future de l'environnement.</br>
-        </p>
+        <p>Aujourd'hui je veux devenir un acteur du numérique pour un meilleur monde de demain, car pour moi il faut unir l'avenir du numérique et le future de l'environnement.</p>
     </div>
+<div>1</div>
 
 
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!-- //////////////////////////////////////////////  COMPÉTENCES  ////////////////////////////////////////////////////////////-->
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
-
-  <div class="separation"></div>
+<div id="mes_competences_desktop"></div>
     <div id="mes_competences">
         <h1 style="text-align: center;">Mes compétences :</h1>
         <div class="barre_progression">
@@ -134,7 +142,8 @@
 <!-- //////////////////////////////////////////////////  FORMATIONS //////////////////////////////////////////////////////////-->
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <div id="formations" class="mes_formations">
+<div id="formations_desktop">
+<div id="formations" class="mes_formations">
       <div class="cards">
             <i class="fa-solid fa-chess-king fa-4x"></i>
             <h2>AFCI</h2><h3>Développeur Fullstacks</h3>
@@ -160,22 +169,21 @@
 <!-- ////////////////////////////////////////////////////  CV  ///////////////////////////////////////////////////////////////-->
 <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 
-    <div class="cv-container">
+    <div id="cv" class="cv-container">
     <div class="separation"></div>
-    <!--Carte Lille-->
-    <div class="carte">
-        <i class="fa-solid fa-location-dot map"></i>
-        <h2>Je suis disponible pour travailler sur l'ensemble de la métropole lilloise.</h2>
-        <p>Mon CV au format PDF :</p>
-        <a href="./CV.pdf" target="_blank">
-        <i class="fa-regular fa-file-pdf cv"></i></a>
+    <!--Image Lille-->
+      <div class="carte">
+          <i class="fa-solid fa-location-dot map"></i>
+          <h2>Je suis disponible pour travailler sur l'ensemble de la métropole lilloise.</h2>
+          <p>Mon CV au format PDF :</p>
+          <a href="./CV.pdf" target="_blank">
+          <i class="fa-regular fa-file-pdf cv"></i></a>
+      </div>
     </div>
-    <div class="separation"></div>
-    </div>
-
+  <div class="separation"></div>
  <!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
 <!-- /////////////////////////////////////////////////  FOOTER  ///////////////////////////////////////////////////////////////-->
-<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
 
     <footer>
         <div class="contact">
@@ -188,8 +196,8 @@
         <br>Vous pouvez également me retrouver sur les sites suivants :</p>
         </div>
         <div class="fontawesome">
-          <a href="https://github.com/"><i class="fa-brands fa-twitter twitter"></i></a>
-          <a href="https://github.com/"><i class="fa-brands fa-linkedin linkedin"></i></a>
+          <a href="https://twitter.com/"><i class="fa-brands fa-twitter twitter"></i></a>
+          <a href="https://fr.linkedin.com/"><i class="fa-brands fa-linkedin linkedin"></i></a>
           <a href="https://github.com/"><i class="fa-brands fa-github github"></i></a>
         </div>
     </footer>
