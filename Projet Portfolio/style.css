@@ -16,7 +16,9 @@
 .img_acceuil{
     min-height: 100vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
+    url('./Ressources/Moi.jpg') no-repeat center fixed;
+    background-position: top 0% left 50%;
+    background-size: 150%;
     position: relative;
     overflow-x: hidden;
 }
@@ -26,7 +28,7 @@
     font-size: 350%;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-shadow: 1px 1px 2px rgb(4, 0, 255), 0 0 8px rgba(171, 180, 38, 0.733), 0 0 8px rgba(136, 148, 31, 0.788);
@@ -315,7 +317,7 @@ url(./Ressources/facade-g656102781_1280.jpg) no-repeat center/cover fixed;
 #cv{
     scroll-margin-top: 200px;
 }
-@media (max-width: 780px){
+@media (max-width: 900px){
     .desktop{
         display: none;
     }
@@ -438,7 +440,14 @@ url(./Ressources/facade-g656102781_1280.jpg) no-repeat center/cover fixed;
         color: rgba(221, 221, 61, 0.705);
       }
 }
-@media (min-width: 800px){
+@media (min-width: 900px){
+    .img_acceuil{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url('./Ressources/Moi.jpg') no-repeat fixed;
+        background-position: top 40% left 50%;
+        background-size: 100%;
+        background-color: #013328;
+    }
     .a_propos{
         height: 550px;
         padding-top: 20px;
