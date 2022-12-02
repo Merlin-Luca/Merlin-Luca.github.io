@@ -1,4 +1,3 @@
-// TEXTE QUI APPARAIT COMME SI IL ÉTAIT ÉCRIT ?
 const checkBox = document.getElementById('checkbox');
 var menuItems = document.getElementById('menu-items');
 const ul = document.querySelector('ul');
@@ -47,11 +46,9 @@ function menu_Disparition()
 
 let html = document.querySelectorAll('.progressChargement');
 let progressBar = [];
-console.log(html);
 html.forEach(currentValue => {
     progressBar.push(currentValue);
     });
-console.log(progressBar[0].innerHTML);
 
 let i = 15;
 let y = 15;
