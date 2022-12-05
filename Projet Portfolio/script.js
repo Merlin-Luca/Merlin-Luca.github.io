@@ -1,9 +1,9 @@
 const checkBox = document.getElementById('checkbox');
-var menuItems = document.getElementById('menu-items');
+let menuItems = document.getElementById('menu-items');
 const ul = document.querySelector('ul');
-var line1 = document.querySelector('.line1');
-var line2 = document.querySelector('.line2');
-var line3 = document.querySelector('.line3');
+let line1 = document.querySelector('.line1');
+let line2 = document.querySelector('.line2');
+let line3 = document.querySelector('.line3');
 
 checkBox.addEventListener("click", menu_Apparition);
 ul.addEventListener("click", menu_Disparition);
@@ -54,22 +54,31 @@ let i = 15;
 let y = 15;
 let z = 15;
 let u = 15;
+const progressTest = new IntersectionObserver((entries)=>{
+    if(entries[0].isIntersecting){
+        zeroTo100()
+        load()
+    }
+})
+
+let competences = document.querySelector('.container-css')
+progressTest.observe(competences)
+
 function zeroTo100(){
-    if( i < 100 ) {
-        progressBar[0].innerHTML = ++i + "%";
-        setTimeout(zeroTo100, 30);
-    }
-    if(y != 85){
-        progressBar[1].innerHTML = ++y + "%";
-    }
-    if(z != 80){
-        progressBar[2].innerHTML = ++z + "%";
-    }
-    if(u != 50){
-        progressBar[3].innerHTML = ++u + "%";
-    }
+        if( i < 100 ) {
+            progressBar[0].innerHTML = ++i + "%";
+            setTimeout(zeroTo100, 16);
+        }
+        if(y != 85){
+            progressBar[1].innerHTML = ++y + "%";
+        }
+        if(z != 80){
+            progressBar[2].innerHTML = ++z + "%";
+        }
+        if(u != 50){
+            progressBar[3].innerHTML = ++u + "%";
+        } 
 }
-zeroTo100();
 
 const progress = document.querySelectorAll('.progressbar');
 let barre = [];
@@ -77,10 +86,10 @@ progress.forEach(currentValue => {
     barre.push(currentValue);
     });
 
-let h = 9;
-let c = 6;
-let s = 3;
-let j = 0;
+let h = 36;
+let c = 40;
+let s = 32;
+let j = 31;
 function load()
 {
     if(h < 100){
@@ -99,4 +108,3 @@ function load()
     }
     setTimeout(load, 25);
 }
-load();
