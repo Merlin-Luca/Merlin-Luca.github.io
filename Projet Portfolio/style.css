@@ -315,8 +315,8 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 #cv{
     scroll-margin-top: 200px;
 }
-.none:hover{
-    color: rgb(138, 138, 138);
+.none{
+   color: rgb(70, 69, 69);
 }
 @media (max-width: 900px){
     .desktop{
