@@ -318,8 +318,11 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 .none{
    color: rgb(70, 69, 69);
 }
-a:visited{
+a:visited > i{
     color: white;
+}
+a:active > i{
+    color:white;
 }
 @media (max-width: 900px){
     .desktop{
