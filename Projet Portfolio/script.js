@@ -8,6 +8,53 @@ let line3 = document.querySelector('.line3');
 checkBox.addEventListener("click", menu_Apparition);
 ul.addEventListener("click", menu_Disparition);
 
+window.addEventListener("load",()=>{
+    let divLeft = document.getElementById("left");
+    let divRight = document.getElementById("right");
+    let left = document.querySelector(".left");
+    let right = document.querySelector(".right");
+    const options = {duration: 5000, direction: "alternate"}
+    apparaitreLeft()
+    apparaitreRight()
+    
+function apparaitreLeft(){
+    const keyframesLeft = [{left: "0"}, {left: "-115%"}, {left: "0"}];
+    const keyframesLeft2 = [{left: "0"}, {left: "-65%"}, {left: "0"}];
+    if(left.innerHTML == "Developpeur")
+    {
+        const LeftAnimation = divLeft.animate(keyframesLeft, options);
+        LeftAnimation.addEventListener("finish", ()=>{
+        left.innerHTML= "Merlin"
+        apparaitreLeft()
+    })
+    }
+    else
+    {
+        const LeftAnimation2 = divLeft.animate(keyframesLeft2, options);
+        LeftAnimation2.addEventListener("finish", ()=>{
+        left.innerHTML= "Developpeur"
+        apparaitreLeft()
+        })  
+    }    
+}
+    function apparaitreRight()
+    {
+        const keyframesRight = [{right: "0"}, {right: "-70%"}, {right: "0"}];
+        const RightAnimation = divRight.animate(keyframesRight, options);
+        RightAnimation.addEventListener("finish", ()=>{
+            if(right.innerHTML == "Web")
+            {
+                right.innerHTML= "Luca"
+            }
+            else{
+                right.innerHTML = "Web"
+            }
+            apparaitreRight()
+        })
+    }
+});  
+     
+
 function menu_Apparition()
 {
     if(checkBox.checked == true)
@@ -75,7 +122,7 @@ function zeroTo100(){
         if(z != 80){
             progressBar[2].innerHTML = ++z + "%";
         }
-        if(u != 50){
+        if(u != 60){
             progressBar[3].innerHTML = ++u + "%";
         } 
 }
@@ -86,10 +133,10 @@ progress.forEach(currentValue => {
     barre.push(currentValue);
     });
 
-let h = 36;
+let h = 45;
 let c = 40;
-let s = 32;
-let j = 31;
+let s = 45;
+let j = 38;
 function load()
 {
     if(h < 100){
@@ -102,7 +149,7 @@ function load()
     }if(s < 80){
         s++
         progress[2].style.width = s+"%"
-    }if(j < 50){
+    }if(j < 60){
         j++
         progress[3].style.width = j+"%"
     }
