@@ -8,6 +8,7 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* MOBILE (+ BASE AUTRES FORMATS) */
 .moi{
     box-shadow: -5px -5px 2px 1px rgba(21, 21, 22, 0.856);
     max-width: 85%;
@@ -111,24 +112,23 @@ li.gauche{
     margin-right: 15px;
 }
 .mes_formations > .cards{
-    color: rgb(46, 45, 45);
-    background-color: rgba(148, 142, 142, 0.15);
+    color: rgb(226, 226, 226);
+    background-color: rgb(70, 69, 69);
     box-shadow: 5px 5px 5px #100D0D;
     margin-bottom: 15px;
     margin-top: 15px;
-    padding-top: 30px;
     margin-left: 30px;
     margin-right: 30px;
     aspect-ratio: 2/1;
     border-radius: 1%;
+    padding-top: 30px;
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 25px;
-    transition: background-color 1s ease-out, color 1s;
-}
-.mes_formations > .cards:hover{
-    color: rgb(226, 226, 226);
-    background-color: rgb(70, 69, 69);
+    transition: box-shadow 0.7s ease-out, padding 0.3s ease-out;
+    max-width: 750px;
+    min-height: 320px;
+    max-height: 500px;
 }
 .mes_formations > .cards:first-child{
     margin-top: 80px;
@@ -140,17 +140,10 @@ li.gauche{
     padding-bottom: 10px;
     padding-top: 5px;
 }
-.cards>p{
-    opacity: 0;
-    transition: opacity 1s;
-}
 .cards:hover{
     box-shadow: 5px 5px 5px #7a7878;
+    padding: 40px 40px 40px 40px;
 }
-.cards:hover>p{
-    opacity: 1;
-}
-
 .footer_div_img{
     display: flex;
     justify-content: center;
@@ -311,11 +304,10 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 #cv{
     scroll-margin-top: 200px;
 }
-.none{
-   color: rgb(70, 69, 69);
-}
 
-@media (max-width: 900px){
+/* NAVBAR ET TEXTE PHOTO GESTION  */
+@media (max-width: 1400px)
+{
     .all{
         display: flex;
         justify-content: center;
@@ -350,7 +342,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         width: 100%;
         box-shadow: 0 1px 4px rgba(31, 63, 94, 0.678);
       }
-      
       .nav-container {
         display: flex;
         justify-content: space-between;
@@ -361,6 +352,9 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
       .navbar .menu-items {
         display: flex;
       }
+      .menu-items > ul > li{
+        margin-top: 50px;
+      }
       .navbar .nav-container li {
         list-style: none;
       }
@@ -369,14 +363,13 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         text-decoration: none;
         color: #ffffff;
         font-weight: 500px;
-        font-size: 1.2rem;
-        padding: 0.7rem;
+        font-size: 1.5rem;
+        padding: 1rem;
       }
-      
       .navbar .nav-container a:hover{
           font-weight: bolder;
           text-shadow: 1px 1px 2px rgb(4, 0, 255), 0 0 8px rgba(171, 180, 38, 0.733), 0 0 8px rgba(136, 148, 31, 0.788);
-          font-size: 1.2rem;
+          font-size: 1.5rem;
       }
       
       .nav-container {
@@ -469,7 +462,33 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         margin-top: 150px;
     }
 }
-@media (min-width: 900px){
+
+/* TABLETTE  */
+@media screen and (max-width: 1400px) and (min-width: 800px){
+    .all{
+        margin-top: 35%;
+    }
+    .mes_formations > .cards{
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .barre_progression{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+      
+    .navbar .nav-container a {
+        font-size: 2rem;
+    }
+    .navbar .nav-container a:hover{
+          font-size: 2rem;
+    }
+    
+}
+
+/* PC */
+@media (min-width: 1400px){
     .all{
         display: flex;
         justify-content: center;
@@ -501,7 +520,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
-        background-size: 100%;
+        background-size: 50%;
         background-color: #013328;
     }
     .a_propos{
@@ -556,8 +575,8 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         margin-top: 30px;
       }
     .barre_progression{
-        margin-left: 80px;
-        margin-right: 80px;
+        margin-left: 20%;
+        margin-right: 20%;
     }
     .cv-container{
         color: white;
@@ -611,9 +630,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     .iDisparition{
         opacity: 0;
-    }
-    .none{
-        display: none;
     }
 }
 .padding-top-8px{
