@@ -489,6 +489,9 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 
 /* PC */
 @media (min-width: 1400px){
+    *{
+        scroll-behavior: smooth;
+    }
     .all{
         display: flex;
         justify-content: center;
