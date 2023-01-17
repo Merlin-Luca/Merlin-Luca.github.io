@@ -92,7 +92,7 @@ li.gauche{
 }
 
 .mes_projets{
-    height: 150vh;
+    height: 180vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -121,6 +121,7 @@ li.gauche{
     justify-content: center;
     align-items: center;
     margin: 20px;
+    margin-bottom: 50px;
 }
 .projet_container > div > a > img{
     width: 100%;
@@ -546,7 +547,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
           font-size: 2rem;
     }
     .mes_projets{
-        height: 160vh;
+        height: 180vh;
     }
     .mes_projets > div {
         flex-direction: row;

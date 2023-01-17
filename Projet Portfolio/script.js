@@ -53,7 +53,7 @@ function apparaitreLeft(){
         })
     }
 });  
-     
+  
 
 function menu_Apparition()
 {
