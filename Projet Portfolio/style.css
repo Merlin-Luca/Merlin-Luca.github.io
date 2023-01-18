@@ -84,7 +84,11 @@ li.gauche{
 }
 .mes_projets > h2{
     margin-top: 100px;
+}
+.mes_projets > p{
+    margin-top: 100px;
     margin-bottom: 100px;
+    text-align: center;
 }
 .mes_projets > div {
     display: flex;
@@ -130,6 +134,34 @@ li.gauche{
     opacity: 1;
 }
 .projet_container > div > a > p{
+    text-align: center;
+}
+.autres_projet_observer > div > img{
+    width: 100%;
+    height: 100%;
+    max-width: 550px;
+    max-height: 350px;
+    outline: 2px solid rgb(226, 226, 226);
+    border-radius: 2%;
+}
+.autres_projet_observer > div > p{
+    position: relative;
+    bottom: 220px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    color: white;
+    margin: 5px;
+}
+.autres_projet_observer > div > img{
+    transition: opacity 0.5s;
+}
+.autres_projet_observer > div:hover img{
+    opacity: 0.2;
+}
+.autres_projet_observer > div:hover p{
+    opacity: 1;
+}
+.autres_projet_observer > div > p{
     text-align: center;
 }
 
@@ -620,10 +652,16 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         height: 100vh;
     }
     .mes_projets > h2{
-        margin-top: 250px;
+        margin-top: 150px;
     }
     .mes_projets > div {
         flex-direction: row;
+    }
+    .projet_container > div > a:hover img{
+        opacity: 1 !important; 
+    }
+    .projet_container > div > a:hover p{
+        opacity: 0 !important;
     }
 
     li > a{
