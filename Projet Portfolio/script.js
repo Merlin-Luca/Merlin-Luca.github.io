@@ -101,6 +101,7 @@ let i = 15;
 let y = 15;
 let z = 15;
 let u = 15;
+
 const progressTest = new IntersectionObserver((entries)=>{
     if(entries[0].isIntersecting){
         zeroTo100()
@@ -110,6 +111,63 @@ const progressTest = new IntersectionObserver((entries)=>{
 
 let competences = document.querySelector('.container-css')
 progressTest.observe(competences)
+
+// Myflix 
+const my_flix_observe = new IntersectionObserver((entries)=>{
+    let my_flix_p = document.querySelector('.my-flix-p')
+    let my_flix_img = document.querySelector('.my_flix_img')
+    if(entries[0].isIntersecting)
+    {
+        my_flix_p.style.opacity = "1";
+        my_flix_img.style.opacity = "0.4";
+    }
+    else
+    {
+        my_flix_p.style.opacity = "0";
+        my_flix_img.style.opacity = "1";
+    }
+}, {threshold: 0.95})
+
+let my_flix_observer = document.querySelector('.my_flix_observer')
+my_flix_observe.observe(my_flix_observer)
+
+// E-commerce
+const e_commerce_observe = new IntersectionObserver((entries)=>{
+    let e_commerce_p = document.querySelector('.e_commerce_p')
+    let e_commerce_img = document.querySelector('.e_commerce_img')
+    if(entries[0].isIntersecting)
+    {
+        e_commerce_p.style.opacity = "1";
+        e_commerce_img.style.opacity = "0.4";
+    }
+    else
+    {
+        e_commerce_p.style.opacity = "0";
+        e_commerce_img.style.opacity = "1";
+    }
+}, {threshold: 0.95})
+
+let e_commerce_observer = document.querySelector('.e_commerce_observer')
+e_commerce_observe.observe(e_commerce_observer)
+
+// Autres
+const autres_projet_observe = new IntersectionObserver((entries)=>{
+    let autres_projet_p = document.querySelector('.autres_projet_p')
+    let autres_projet_img = document.querySelector('.autres_projet_img')
+    if(entries[0].isIntersecting)
+    {
+        autres_projet_p.style.opacity = "1";
+        autres_projet_img.style.opacity = "0.4";
+    }
+    else
+    {
+        autres_projet_p.style.opacity = "0";
+        autres_projet_img.style.opacity = "1";
+    }
+}, {threshold: 0.95})
+
+let autres_projet_observer = document.querySelector('.autres_projet_observer')
+autres_projet_observe.observe(autres_projet_observer)
 
 function zeroTo100(){
         if( i < 100 ) {
