@@ -80,7 +80,6 @@ li.gauche{
     font-size: 2rem;
     background-color: rgb(19, 19, 19);
     color: white;
-    padding-bottom: 100px;
 }
 .mes_projets > h2{
     margin-top: 100px;
@@ -111,7 +110,7 @@ li.gauche{
 .projet_container > div > a > img{
     width: 100%;
     height: 100%;
-    max-width: 550px;
+    max-width: 400px;
     max-height: 350px;
     outline: 2px solid rgb(226, 226, 226);
     border-radius: 2%;
@@ -136,10 +135,13 @@ li.gauche{
 .projet_container > div > a > p{
     text-align: center;
 }
+.autres_projet_observer{
+    margin-bottom: 150px;
+}
 .autres_projet_observer > div > img{
     width: 100%;
     height: 100%;
-    max-width: 550px;
+    max-width: 400px;
     max-height: 350px;
     outline: 2px solid rgb(226, 226, 226);
     border-radius: 2%;
