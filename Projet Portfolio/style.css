@@ -15,6 +15,7 @@
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
     position: relative;
     overflow-x: hidden;
+    min-height: 80vh;
 }
 
 .all{
@@ -591,7 +592,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 
 
 /* LAPTOP  */
-@media (min-width: 1000px) and (max-width: 1300px){
+@media (min-width: 1000px) and (max-width: 1400px){
     *{
         scroll-behavior: smooth;
     }
@@ -664,7 +665,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 }
 
 /* PC */
-@media (min-width: 1300px){
+@media (min-width: 1400px){
     *{
         scroll-behavior: smooth;
     }
