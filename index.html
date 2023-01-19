@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.css">
-    <script src="./script.js" defer></script>
+    <title>Merlin Luca</title>
+    <link rel="stylesheet" href="./Projet Portfolio/style.css">
+    <link rel="stylesheet" href="./Projet Portfolio/node_modules/@fortawesome/fontawesome-free/css/all.css">
+    <script src="./Projet Portfolio/script.js" defer></script>
 </head>
 <body>
 
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ----------------------------------------  NAVBAR +  MENU BURGER  ------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------- -->
+<!-- ------------ NAV BAR & BURGER  ---------------- -->
+<!-- --------------------------------------------- -->
 
     <nav class="mobile">
         <div class="navbar"  id="acceuil">
@@ -27,60 +27,81 @@
             
             <div id="menu-items" class="menu-items">
               <ul>
-                <li><i class="fa-solid fa-cable-car"></i><a href="#acceuil">Accueil</a></li>
-                <li><i class="fa-solid fa-person-through-window"></i><a href="#a_propos">Qui suis-je ?</a></li>
-                <li><i class="fa-solid fa-person-snowboarding"></i><a href="#mes_competences">Mes Compétences</a></li>
-                <li><i class="fa-solid fa-house-chimney-user"></i><a href="#formations">Mes Formations</a></li>
-                <li><i class="fa-solid fa-mug-hot"></i><a href="#contact">Mes Contacts</a></li>
+                <li><i class="fa-solid fa-house"></i><a href="#acceuil">Accueil</a></li>
+                <li><i class="fa-solid fa-question"></i></i><a href="#a_propos">Qui suis-je ?</a></li>
+                <li><i class="fa-solid fa-dumbbell"></i><a href="#mes_competences">Mes Compétences</a></li>
+                <li><i class="fa-solid fa-book-open"></i></i><a href="#mes_projets">Mes Projets</a></li>
+                <li><i class="fa-solid fa-graduation-cap"></i></i><a href="#formations">Mes Formations</a></li>
+                <li><i class="fa-solid fa-address-book"></i><a href="#contact">Mes Contacts</a></li>
               </ul>
             </div>
+
           </div>
         </div>
-      </nav>
+    </nav>
 
       <nav class="desktop">
           <ul>
             <li><a href="#acceuil_desktop">Accueil</a></li>
             <li><a href="#A_propos_desktop">Qui suis-je ?</a></li>
             <li><a href="#mes_competences_desktop">Mes Compétences</a></li>
+            <li><a href="#mes_projets">Mes Projets</a></li>
             <li><a href="#formations_desktop">Mes Formations</a></li>
             <li><a href="#cv">Mon CV</a></li>
             <li><a href="#contact">Mes Contacts</a></li>
           </ul>
       </nav>
 
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ----------------------------------------------  MA PHOTO  -------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------- -->
+<!-- ----------------  MA PHOTO  ---------------- -->
+<!-- --------------------------------------------- -->
 
-    <div id="acceuil_desktop"class="img_acceuil">
-        <h2>Merlin Luca<br>Développeur Fullstacks</h2>
+    <div id="acceuil_desktop" class="img_acceuil">
+        <div class="all">
+
+          <div class="overflow">
+              <div id="left">
+                  <div class="left">Developpeur</div>
+              </div>
+          </div>
+  
+          <span class="barre"></span>
+  
+          <div class="overflow">
+              <div id="right">
+                  <div class="right">Web</div>
+              </div>
+          </div>
+
+        </div>
     </div>
     
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ----------------------------------------------  A PROPOS  -------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+    
+    
+<!-- --------------------------------------------- -->
+<!-- ----------------  A PROPOS  ---------------- -->
+<!-- --------------------------------------------- -->
 
     <div id="A_propos_desktop"></div>
     <div class="a_propos" id="a_propos">
         <p><i class="fa-regular fa-comment-dots" style="font-size: 3rem"></i></p>
         <h2>Qui suis-je ?</h2>
-        <p>Je suis passionné par l'informatique, la photographie et cinéphile a mes heures perdues.</p>
-        <p>Après des années d'études en anthropologie, je me redirige vers un métier passions le développement web.</p>
-        <p>Des débuts en autodidacte en parrallèle de mes études m'ont donné cette envie.
-          Et le plaisir pris par cela m'a convaincu de ce choix.</br>
-        <p>Aujourd'hui je veux devenir un acteur du numérique pour un meilleur monde de demain, car pour moi il faut unir l'avenir du numérique et le future de l'environnement.</p>
+        <p>Un simple passionné de l'informatique, la photographie et cinéphile à mes heures perdues.</p>
+        <p>C'est après des années d'études en anthropologie, que je me redirige vers un métier passion : le développement web.</p>
+        <p>Ce sont des débuts en autodidacte et le plaisir pris par celà qui m'ont convaincu de ce choix.</br>
+        <p>Aujourd'hui je fais tout pour atteindre ce but.</p>
     </div>
-<div>1</div>
+<div></div>
 
 
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- --------------------------------------------  COMPETENCES  ------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------- -->
+<!-- ----------------  COMPETENCES  ---------------- -->
+<!-- --------------------------------------------- -->
 
 <div id="mes_competences_desktop"></div>
     <div id="mes_competences">
         <h1 style="text-align: center;">Mes compétences :</h1>
+        <div class="barre_contains">
         <div class="barre_progression">
         <!-- Séparation -->
         <div class="separation_basse"></div>
@@ -105,7 +126,7 @@
 
           <div class="container-js progressbar" role="progressbar">
             <span class="before">
-              <i class="fab fa-js fa-2x"></i><span>&nbsp; JavaScript</span><i class="after"><span class="progressChargement"></span></i>
+              <i class="fab fa-js fa-2x"></i><span>&nbsp; JS</span><i class="after"><span class="progressChargement"></span></i>
             </span>
           </div>
           <!-- Séparation -->
@@ -136,19 +157,55 @@
               </span>
             </div>
           </div>
+        </div>
     </div>
     <div class="separation"></div>
 
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- ---------------------------------------------  FORMATIONS  ------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------- -->
+<!-- ---------------   MES PROJETS  -------------- -->
+<!-- --------------------------------------------- -->
+
+<div id="mes_projets" class="mes_projets">
+  <h2>Mes projets :<hr></h2>
+  <p>Vous pouvez y accéder en cliquant dessus</p>
+  <div class="projet_container">
+
+    <div class="my_flix_observer">
+      <a href="https://merlin-luca-myflix.netlify.app/">
+        <img  class="my_flix_img" src="./Projet Portfolio/Ressources/my-flix.png" alt="">
+        <p class="my-flix-p">Maquette site streaming <br> En HTML et CSS</p>
+      </a>
+    </div>
+
+    <div class="e_commerce_observer">
+      <a href="https://merlin-luca-ecommerce.netlify.app/">
+        <img class="e_commerce_img" src="./Projet Portfolio/Ressources/e-commerce.png" alt="">
+        <p  class="e_commerce_p">Site E-commerce <br> HTML, CSS et JS</p>
+      </a>
+    </div>
+
+    <div class="autres_projet_observer">
+      <div>
+        <img  class="autres_projet_img"src="./Projet Portfolio/Ressources/construction.png" alt="">
+        <p  class="autres_projet_p">Autres sites : <br> Prochainement !</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+<div class="separation"></div>
+
+<!-- --------------------------------------------- -->
+<!-- ----------------  FORMATIONS  ---------------- -->
+<!-- --------------------------------------------- -->
 
 <div id="formations_desktop">
 <div id="formations" class="mes_formations">
       <div class="cards">
             <i class="fa-solid fa-chess-king fa-4x"></i>
-            <h2>AFCI</h2><h3>Développeur Fullstacks</h3>
-            <p>Maitrise du JavaScript, TypeScript, PHP, d'Angular et MySQL</p>
+            <h2>AFCI</h2>
+            <h3>Développeur Fullstacks</h3>
+            <p>Maitrise du JavaScript, de TypeScript, PHP, d'Angular et MySQL</p>
             <p>(En cours)</p>
       </div>
       <i class="fa-solid fa-arrow-up fa-2x iDisparition"></i>
@@ -158,22 +215,24 @@
             <h3>Incubateur du numérique</h3>
             <p>Projet de groupe :</p>
             <p>- Allomovie en React</p>
-              <p>- PokeApi avec Node, Express et MongoDB</p>
+            <p>- PokeApi avec Node, Express et MongoDB</p>
       </div>
       <i class="fa-solid fa-arrow-up fa-2x iDisparition"></i>
       <div class="cards">
             <i class="fa-solid fa-chess-pawn fa-4x"></i>
             <h2>Simplon</h2>
             <h3>Développeur Front-End</h3>
-            <p>Maquetter et refaire son CV en site web en HTML et CSS</p>
-            <p>Reproduire la landing page de Figma avec Bootstrap</p>
-            <p>Projet de groupe Association Animale avec HTML, CSS et JS</p>
+            <p>
+              - Maquetter son CV<br><br>
+              - Reproduire la landing page de Figma avec Bootstrap<br><br>
+              - Projet de groupe en HTML, CSS et JavaScript.
+            </p>
       </div>
     </div>
     
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- -------------------------------------------------  CV  ----------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------- -->
+<!-- -------------------  CV  --------------------- -->
+<!-- --------------------------------------------- -->
 
     <div id="cv" class="cv-container">
     <div class="separation"></div>
@@ -181,20 +240,19 @@
       <div class="carte">
           <i class="fa-solid fa-location-dot map"></i>
           <h2>Je suis disponible pour travailler sur l'ensemble de la métropole lilloise.</h2>
-          <p>Mon CV au format PDF :</p>
-          <a href="./CV.pdf" target="_blank">
+          <p>Mon CV au format PDF,<br>Téléchargable ici :</p>
+          <a href="./Projet Portfolio/CV.pdf" target="_blank">
           <i class="fa-regular fa-file-pdf cv"></i></a>
       </div>
     </div>
   <div class="separation"></div>
 
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
-<!-- -----------------------------------------------  FOOTER  --------------------------------------------------------------- -->
-<!-- ------------------------------------------------------------------------------------------------------------------------ -->
+<!-- --------------------------------------------- -->
+<!-- ------------------  FOOTER  ------------------ -->
+<!-- --------------------------------------------- -->
 
     <footer>
         <div class="contact">
-        <!-- <i class="fa-solid fa-feather fa-4x"></i> -->
         <h2 id="contact">Me Contacter <i class="fa-regular fa-circle-question" style="color: yellow;"></i></h2>
         <br>Si vous souhaitez me contacter,
         <br>Écrivez-moi par mail à cette adresse :</br>
@@ -203,9 +261,9 @@
         <br>Vous pouvez également me retrouver sur les sites suivants :</p>
         </div>
         <div class="fontawesome">
-          <a href="https://twitter.com/"><i class="fa-brands fa-twitter twitter"></i></a>
-          <a href="https://fr.linkedin.com/"><i class="fa-brands fa-linkedin linkedin"></i></a>
-          <a href="https://github.com/"><i class="fa-brands fa-github github"></i></a>
+          <a href="https://twitter.com/_MerlinLuca"><i class="fa-brands fa-twitter twitter"></i></a>
+          <a href="https://www.linkedin.com/in/merlin-luca-08a367248/"><i class="fa-brands fa-linkedin linkedin"></i></a>
+          <a href="https://github.com/Merlin-Luca"><i class="fa-brands fa-github github"></i></a>
         </div>
     </footer>
     <div class="separation"></div>
