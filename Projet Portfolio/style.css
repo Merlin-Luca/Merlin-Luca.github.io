@@ -15,7 +15,7 @@
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
     position: relative;
     overflow-x: hidden;
-    min-height: 80vh;
+    min-height: 100vh;
 }
 
 .all{
