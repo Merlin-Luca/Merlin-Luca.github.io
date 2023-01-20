@@ -15,8 +15,12 @@
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
     position: relative;
     overflow-x: hidden;
-    min-height: 102vh;
-    max-height: 102vh;
+    min-height: 95vh;
+}
+
+.all{
+    position: relative;
+    bottom: -50px;
 }
 
 li{
@@ -538,10 +542,73 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
 }
 
-/* TABLETTE  */
-@media screen and (max-width: 1400px) and (min-width: 800px){
+/* TABLETTE */
+@media (min-width: 900px) and (max-width: 1000px)
+{
+    *{
+        scroll-behavior: smooth;
+    }
+    .all{
+        margin-top: 55%;
+    }
+
+    .mes_formations > .cards{
+        margin: auto;
+        margin-bottom: 5%;
+        margin-top: 5%;
+    }
+    .barre_progression{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+      
+    .navbar .nav-container a {
+        font-size: 2rem;
+    }
+    .navbar .nav-container a:hover{
+        font-size: 2rem;
+    }
+    .mes_projets{
+        height: 180vh;
+    }
+    .mes_projets > div {
+        flex-direction: column;
+    }
+      .img_acceuil{
+        min-height: 100vh;
+    }
+    .mes_formations{
+        align-items: center;
+    }
+    .mes_formations > .cards{
+        max-width: 450px;
+        max-height: 350px;
+    }
+    .cards:hover{
+        box-shadow: 5px 5px 5px #7a7878;
+        padding: 40px 40px 40px 40px;
+    }
+}
+
+
+/* LAPTOP  */
+@media (min-width: 1000px) and (max-width: 1400px){
+    *{
+        scroll-behavior: smooth;
+    }
     .all{
         margin-top: 35%;
+    }
+
+    .desktop{
+        display: block;
+        font-size: x-large;
+        border-bottom: 10px solid #013328;
+        position: fixed;
+        background-color: white;
+        width: 100%;
+        top: 0;
+        z-index: 10;
     }
     .mes_formations > .cards{
         margin: auto;
@@ -557,10 +624,10 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         font-size: 2rem;
     }
     .navbar .nav-container a:hover{
-          font-size: 2rem;
+        font-size: 2rem;
     }
     .mes_projets{
-        height: 180vh;
+        height: 250vh;
     }
     .mes_projets > div {
         flex-direction: row;
@@ -570,6 +637,30 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     .mes_projets > div {
         flex-direction: column;
+    }
+
+    li > a{
+        color: #013328;
+        border-bottom: 0px solid #013328;
+        transition: font-weight 5s;
+    }
+    li > a:hover{
+        border-bottom: 2px solid #013328;
+        font-weight: bolder;
+        text-shadow: 0.5px 0.5px 1px rgb(4, 0, 255), 0 0 4px rgba(171, 180, 38, 0.733), 0 0 4px rgba(136, 148, 31, 0.788);
+    }
+    nav > ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 30px;
+      }
+      .img_acceuil{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url('./Ressources/Moi.jpg') no-repeat fixed;
+        background-position: top 40% left 50%;
+        background-size: 50%;
+        background-color: #013328;
     }
 }
 
@@ -649,10 +740,16 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     
     .mes_projets{
-        height: 100vh;
+        height: 80vh;
     }
     .mes_projets > h2{
         margin-top: 150px;
+    }
+    .projet_container > div > a > img{
+        min-height: 350px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 350px;
     }
     .mes_projets > div {
         flex-direction: row;
