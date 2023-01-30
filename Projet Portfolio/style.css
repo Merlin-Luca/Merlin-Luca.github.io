@@ -15,12 +15,12 @@
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
     position: relative;
     overflow-x: hidden;
-    min-height: 95vh;
 }
 
 .all{
     position: relative;
-    bottom: -50px;
+    margin-top: 75%;
+    padding-bottom: 200px;
 }
 
 li{
@@ -384,7 +384,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 }
 
 /* NAVBAR ET TEXTE PHOTO GESTION  */
-@media (max-width: 1400px)
+@media (max-width: 1350px)
 {
     .all{
         display: flex;
@@ -542,13 +542,14 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 }
 
 /* TABLETTE */
-@media (min-width: 900px) and (max-width: 1000px)
+@media (min-width: 768px) and (max-width: 1025px)
 {
     *{
         scroll-behavior: smooth;
     }
     .all{
         margin-top: 55%;
+        padding-bottom: -250px;
     }
 
     .mes_formations > .cards{
@@ -570,9 +571,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     .mes_projets > div {
         flex-direction: column;
     }
-      .img_acceuil{
-        min-height: 100vh;
-    }
     .mes_formations{
         align-items: center;
     }
@@ -588,7 +586,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 
 
 /* LAPTOP  */
-@media (min-width: 1000px) and (max-width: 1400px){
+@media (min-width: 1025px) and (max-width: 1350px){
     *{
         scroll-behavior: smooth;
     }
@@ -652,13 +650,13 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
-        background-size: 50%;
+        background-size: 75%;
         background-color: #013328;
     }
 }
 
 /* PC */
-@media (min-width: 1400px){
+@media (min-width: 1350px){
     *{
         scroll-behavior: smooth;
     }
@@ -666,11 +664,12 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 80vh;
         color: white;
         font-size: 3rem;
         max-width: 600px;
+        margin-top: 25%;
     }
+    
     .barre{
         width: 100%;
         background-color: rgb(255, 255, 255);
@@ -693,7 +692,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
-        background-size: 50%;
+        background-size: 55%;
         background-color: #013328;
     }
     .a_propos{
