@@ -115,7 +115,8 @@ li.gauche{
     width: 100%;
     height: 100%;
     max-width: 550px;
-    max-height: 450px;
+    min-height: 275px;
+    max-height: 350px;
     outline: 2px solid rgb(226, 226, 226);
     border-radius: 2%;
 }
@@ -143,7 +144,8 @@ li.gauche{
     width: 100%;
     height: 100%;
     max-width: 550px;
-    max-height: 450px;
+    min-height: 275px;
+    max-height: 350px;
     outline: 2px solid rgb(226, 226, 226);
     border-radius: 2%;
 }
@@ -204,7 +206,7 @@ li.gauche{
     padding-right: 30px;
     padding-bottom: 25px;
     transition: box-shadow 0.7s ease-out, padding 0.3s ease-out;
-    max-width: 750px;
+    max-width: 320px;
     min-height: 320px;
     max-height: 500px;
 }
@@ -551,7 +553,12 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         margin-top: 55%;
         padding-bottom: -250px;
     }
-
+    .projet_container > div > a > img{
+        min-height: 350px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 350px;
+    }
     .mes_formations > .cards{
         margin: auto;
         margin-bottom: 5%;
@@ -603,6 +610,12 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         width: 100%;
         top: 0;
         z-index: 10;
+    }
+    .projet_container > div > a > img{
+        min-height: 350px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 350px;
     }
     .mes_formations > .cards{
         margin: auto;
@@ -729,6 +742,12 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         width: 100%;
         top: 0;
         z-index: 10;
+    }
+    .projet_container > div > a > img{
+        min-height: 350px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 350px;
     }
     .mes_projets > h2{
         margin-top: 150px;
