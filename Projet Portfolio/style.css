@@ -77,14 +77,13 @@ li.gauche{
 }
 
 .mes_projets{
-    height: 180vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     font-size: 2rem;
     background-color: rgb(19, 19, 19);
     color: white;
-    padding-bottom: 250px;
+    padding-bottom: 50px;
 }
 .mes_projets > h2{
     margin-top: 100px;
@@ -568,9 +567,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     .navbar .nav-container a:hover{
         font-size: 2rem;
     }
-    .mes_projets{
-        height: 180vh;
-    }
     .mes_projets > div {
         flex-direction: column;
     }
@@ -625,9 +621,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     .navbar .nav-container a:hover{
         font-size: 2rem;
-    }
-    .mes_projets{
-        height: 250vh;
     }
     .mes_projets > div {
         flex-direction: row;
@@ -737,10 +730,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         width: 100%;
         top: 0;
         z-index: 10;
-    }
-    
-    .mes_projets{
-        height: 80vh;
     }
     .mes_projets > h2{
         margin-top: 150px;
