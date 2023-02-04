@@ -655,10 +655,10 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background-position: top 40% left 50%;
         background-size: 75%;
         background-color: #013328;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: 75%;
+        -moz-background-size: 75%;
+        -o-background-size: 75%;
+        background-size: 75%;
   }
     .all{
         margin-top: 28%;
@@ -779,10 +779,10 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background-position: top 40% left 50%;
         background-size: 55%;
         background-color: #013328;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
+        -webkit-background-size: 55%;
+        -moz-background-size: 55%;
+        -o-background-size: 55%;
+        background-size: 55%;
     }
     .a_propos{
         height: 550px;
