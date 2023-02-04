@@ -8,6 +8,9 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    background-attachment: scroll;
+}
 /* MOBILE (+ BASE AUTRES FORMATS) */
 
 .img_acceuil{
@@ -694,7 +697,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         min-height: 350px;
     }
     .autres_projet_observer > div > img{
-        min-height: 350px;
+        min-height: 325px;
     }
     .mes_formations > .cards{
         margin: auto;
