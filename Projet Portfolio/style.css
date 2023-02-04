@@ -206,7 +206,6 @@ li.gauche{
     padding-right: 30px;
     padding-bottom: 25px;
     transition: box-shadow 0.7s ease-out, padding 0.3s ease-out;
-    /* GERE L'ALIGNEMENT TABLETTE ET LA TAILLE MAXIMUM */
     max-width: 500px;
     min-height: 320px;
     max-height: 500px;
@@ -541,6 +540,53 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
       .fontawesome{
         height: auto;
         margin-top: 150px;
+    }
+}
+
+/* PETIT TELEPHONE */
+@media (min-width: 0px) and (max-width: 400px)
+{
+    h1{
+        font-size: xx-large;
+    }
+    h2{
+        font-size: x-large;
+    }
+    h3{
+        font-size: large;
+    }
+    p{
+        font-size: 20px;
+        padding: 0px 5px 0px 5px;
+    }
+    a{
+        font-size: 40px;
+    }
+    .menu-items > ul > li{
+        margin-top: 35px;
+    }
+    .mes_projets > h2{
+        margin-top: 75px;
+    }
+    .mes_projets > p{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .projet_container > div > a > img {
+        max-width: 350px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+    .projet_container > div > a > p {
+        bottom: 150px;
+    }
+    .autres_projet_observer > div > img {
+        max-width: 350px;
+        max-height: 250px;
+        min-height: 250px;
+    }
+    .autres_projet_observer > div > p {
+        bottom: 150px;
     }
 }
 
