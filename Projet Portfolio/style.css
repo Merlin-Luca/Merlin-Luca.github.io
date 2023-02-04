@@ -13,6 +13,7 @@
 .img_acceuil{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
+    -webkit-background-size: cover;
     position: relative;
     overflow-x: hidden;
 }
@@ -366,7 +367,8 @@ i > span{
 .cv-container{
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
+    url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
+    -webkit-background-size: cover;
 }
 
 #acceuil_desktop{
@@ -650,6 +652,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
       url('./Ressources/Moi.jpg') no-repeat fixed;
       background-position: top 40% left 50%;
       background-size: 75%;
+      -webkit-background-size: 75%;
       background-color: #013328;
   }
     .all{
@@ -770,6 +773,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
         background-size: 55%;
+    -webkit-background-size: 55%;
         background-color: #013328;
     }
     .a_propos{
@@ -855,7 +859,8 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     .cv-container{
         color: white;
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
+        url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
+        -webkit-background-size: cover;
     }
     .menu-items{
         min-width: 100%;
