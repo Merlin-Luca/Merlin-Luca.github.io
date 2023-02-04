@@ -371,7 +371,7 @@ i > span{
 .cv-container{
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
+url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
 }
 
 #acceuil_desktop{
@@ -603,7 +603,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     .img_acceuil{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-        url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
+        url('./Ressources/Moi.jpg') no-repeat center/cover scroll;
         overflow-x: hidden;
     }
     .all{
@@ -911,6 +911,9 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     .cv-container{
         height: 600px;
+        color: white;
+        background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     }
     .carte>i{
         padding-top: 50px;
