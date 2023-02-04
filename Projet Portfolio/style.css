@@ -601,9 +601,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     *{
         scroll-behavior: smooth;
     }
-    .test{
-        overflow-x: hidden;
-    }
     .img_acceuil{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
