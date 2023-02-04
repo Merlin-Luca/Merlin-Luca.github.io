@@ -207,7 +207,7 @@ li.gauche{
     padding-bottom: 25px;
     transition: box-shadow 0.7s ease-out, padding 0.3s ease-out;
     /* GERE L'ALIGNEMENT TABLETTE ET LA TAILLE MAXIMUM */
-    max-width: 320px;
+    max-width: 500px;
     min-height: 320px;
     max-height: 500px;
 }
@@ -598,8 +598,31 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     *{
         scroll-behavior: smooth;
     }
+
+    .img_acceuil{
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+      url('./Ressources/Moi.jpg') no-repeat fixed;
+      background-position: top 40% left 50%;
+      background-size: 75%;
+      background-color: #013328;
+  }
     .all{
-        margin-top: 35%;
+        margin-top: 28%;
+    }
+    #A_propos_desktop{
+        scroll-margin-top: 75px;
+    }
+    #mes_projets{
+        scroll-margin-top: 75px;
+    }
+    #formations_desktop{
+        scroll-margin-top: 75px;
+    }
+    #cv{
+        scroll-margin-top: 10px;
+    }
+    #contact{
+        scroll-margin-top: 105px;
     }
 
     .desktop{
@@ -612,6 +635,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         top: 0;
         z-index: 10;
     }
+
     .projet_container > div > a > img{
         min-height: 350px;
     }
@@ -660,13 +684,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         justify-content: space-around;
         margin-top: 30px;
       }
-      .img_acceuil{
-        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-        url('./Ressources/Moi.jpg') no-repeat fixed;
-        background-position: top 40% left 50%;
-        background-size: 75%;
-        background-color: #013328;
-    }
 }
 
 /* PC */
