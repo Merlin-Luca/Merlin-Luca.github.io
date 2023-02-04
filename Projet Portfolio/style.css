@@ -10,7 +10,7 @@
 
 /* MOBILE (+ BASE AUTRES FORMATS) */
 
-.img_acceuil{
+.img_acceuil::after{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
     -webkit-background-size: cover;
@@ -647,7 +647,7 @@ i > span{
         scroll-behavior: smooth;
     }
 
-    .img_acceuil{
+    .img_acceuil::after{
       background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
       url('./Ressources/Moi.jpg') no-repeat fixed;
       background-position: top 40% left 50%;
@@ -768,7 +768,7 @@ i > span{
         overflow: hidden;
         min-width: 295px;
     }
-    .img_acceuil{
+    .img_acceuil::after{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
