@@ -15,13 +15,9 @@ body{
 
 .img_acceuil{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
+    url('./Ressources/Moi.jpg') no-repeat center/cover scroll;
     position: relative;
     overflow-x: hidden;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 .all{
@@ -135,6 +131,7 @@ li.gauche{
     color: white;
     margin: 5px;
 }
+
 .projet_container > div > a > img{
     transition: opacity 0.5s;
 }
@@ -193,6 +190,7 @@ li.gauche{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     height: auto;
     text-align: center;
     margin-left: 15px;
@@ -213,7 +211,7 @@ li.gauche{
     padding-right: 30px;
     padding-bottom: 25px;
     transition: box-shadow 0.7s ease-out, padding 0.3s ease-out;
-    max-width: 500px;
+    max-width: 320px;
     min-height: 320px;
     max-height: 500px;
 }
@@ -603,9 +601,17 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     *{
         scroll-behavior: smooth;
     }
+    .test{
+        overflow-x: hidden;
+    }
+    .img_acceuil{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
+        overflow-x: hidden;
+    }
     .all{
-        margin-top: 55%;
-        padding-bottom: -250px;
+        margin-top: 40%;
+        padding-bottom: 0px;
     }
     .projet_container > div > a > img{
         min-height: 350px;
@@ -658,10 +664,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background-position: top 40% left 50%;
         background-size: 75%;
         background-color: #013328;
-        -webkit-background-size: 75%;
-        -moz-background-size: 75%;
-        -o-background-size: 75%;
-        background-size: 75%;
   }
     .all{
         margin-top: 28%;
@@ -693,12 +695,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         z-index: 10;
     }
 
-    .projet_container > div > a > img{
-        min-height: 350px;
-    }
-    .autres_projet_observer > div > img{
-        min-height: 325px;
-    }
     .mes_formations > .cards{
         margin: auto;
         margin-bottom: 5%;
@@ -709,22 +705,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         margin-right: 15%;
     }
       
-    .navbar .nav-container a {
-        font-size: 2rem;
-    }
-    .navbar .nav-container a:hover{
-        font-size: 2rem;
-    }
-    .mes_projets > div {
-        flex-direction: row;
-    }
-    .projet_container > div > a > p{
-        top: -70%;
-    }
-    .mes_projets > div {
-        flex-direction: column;
-    }
-
+    
     li > a{
         color: #013328;
         border-bottom: 0px solid #013328;
@@ -739,8 +720,139 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: center;
         margin-top: 30px;
+        font-size: 22px;
+        max-height: 45px;
       }
+
+    .mes_projets > div {
+        flex-direction: row;
+    }
+    .a_propos{
+        font-size: 20px;
+    }
+    #mes_competences > h1{
+        font-size: x-large;
+    }
+    .barre_progression{
+        margin-left: 260px;
+        margin-right: 260px;
+    }
+    .barre_progression > h1{
+        font-size: large;
+    }
+    .barre_progression > div > span > span{
+        font-size: small;
+    }
+    
+    .projet_container > div > a > img{
+        min-height: 200px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 200px;
+    }
+    .projet_container > div > a:hover img{
+        opacity: 1 !important; 
+    }
+    .projet_container > div > a:hover p{
+        opacity: 0 !important;
+    }
+    .projet_container > div > a > p {
+        bottom: 155px;
+    }
+    .autres_projet_observer > div > p{
+        bottom: 155px;
+    }
+    .mes_projets{
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+    .mes_projets > h2{
+        margin-top: 50px;
+        font-size: x-large;
+    }
+    .mes_projets > p{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .mes_projets > div > div{
+        margin: 20px;
+    }
+
+    .mes_formations{
+        flex-direction: row;
+        height: 450px;
+        max-height: 450px;
+        margin-right: 125px;
+        margin-left: 125px;
+    }
+    .mes_formations > .cards{
+        max-width: 200px;
+        min-width: 200px;
+        min-height: 250px;
+        max-height: 250px;
+    }
+    .mes_formations > .cards > p{
+        font-size: medium;
+    }
+    .mes_formations > .cards > i{
+        font-size: xx-large;
+    }
+    .mes_formations > .cards > h2{
+        font-size: large;
+    }
+    .mes_formations > .cards > h3{
+        font-size: medium;
+    }
+    .mes_formations > .cards:first-child{
+        margin-top: 45px;
+    }
+    .mes_formations > .cards:last-child{
+        margin-bottom: 45px;
+    }
+    .iDisparition{
+        opacity: 0;
+    }
+    .carte{
+    padding-top: 125px;
+    padding-bottom: 10px;
+    height: 350px;
+    }
+    .carte > h2 {
+        margin-bottom: 5px;
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: large;
+    }
+    .cv{
+        padding: 20px;
+        font-size: 3rem;
+    }
+    
+    footer
+    {
+        max-height: 350px;
+    }
+    .contact{
+        padding-top: 0px;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .contact > h2{
+        padding-top: 50px;
+    }
+    .contact > p {
+        padding-top: 0px;
+        font-size: medium;
+    }
+    .fontawesome{
+        margin-top: 20px;
+        font-size: 40px;
+    }
 }
 
 /* PC */
@@ -782,10 +894,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         background-position: top 40% left 50%;
         background-size: 55%;
         background-color: #013328;
-        -webkit-background-size: 55%;
-        -moz-background-size: 55%;
-        -o-background-size: 55%;
-        background-size: 55%;
     }
     .a_propos{
         height: 550px;
@@ -823,19 +931,28 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
         z-index: 10;
     }
     .projet_container > div > a > img{
-        min-height: 350px;
+        min-height: 320px;
     }
     .autres_projet_observer > div > img{
-        min-height: 350px;
+        min-height: 320px;
+    }
+    .mes_projets > h2{
+        margin-top: 50px;
+        font-size: xx-large;
+    }
+    .mes_projets > p{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: x-large;
     }
     .mes_projets > h2{
         margin-top: 150px;
     }
     .projet_container > div > a > img{
-        min-height: 350px;
+        min-height: 320px;
     }
     .autres_projet_observer > div > img{
-        min-height: 350px;
+        min-height: 320px;
     }
     .mes_projets > div {
         flex-direction: row;
