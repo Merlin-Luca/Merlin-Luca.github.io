@@ -10,12 +10,15 @@
 
 /* MOBILE (+ BASE AUTRES FORMATS) */
 
-.img_acceuil::after{
+.img_acceuil{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     url('./Ressources/Moi.jpg') no-repeat center/cover fixed;
-    -webkit-background-size: cover;
     position: relative;
     overflow-x: hidden;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .all{
@@ -367,8 +370,7 @@ i > span{
 .cv-container{
     color: white;
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
-    -webkit-background-size: cover;
+url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
 }
 
 #acceuil_desktop{
@@ -647,13 +649,16 @@ i > span{
         scroll-behavior: smooth;
     }
 
-    .img_acceuil::after{
-      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-      url('./Ressources/Moi.jpg') no-repeat fixed;
-      background-position: top 40% left 50%;
-      background-size: 75%;
-      -webkit-background-size: 75%;
-      background-color: #013328;
+    .img_acceuil{
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
+        url('./Ressources/Moi.jpg') no-repeat fixed;
+        background-position: top 40% left 50%;
+        background-size: 75%;
+        background-color: #013328;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
   }
     .all{
         margin-top: 28%;
@@ -768,13 +773,16 @@ i > span{
         overflow: hidden;
         min-width: 295px;
     }
-    .img_acceuil::after{
+    .img_acceuil{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
         background-size: 55%;
-    -webkit-background-size: 55%;
         background-color: #013328;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
     }
     .a_propos{
         height: 550px;
@@ -859,8 +867,7 @@ i > span{
     .cv-container{
         color: white;
         background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-        url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
-        -webkit-background-size: cover;
+    url(./Ressources/bourse_lille.jpg) no-repeat center/cover fixed;
     }
     .menu-items{
         min-width: 100%;
