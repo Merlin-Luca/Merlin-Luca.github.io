@@ -239,6 +239,10 @@ footer{
     width: auto;
     background-color: #181f1c;
 }
+footer > div > p {
+    padding-left: 5%;
+    padding-right: 5%;
+}
 .fontawesome{
     margin-left: 35px;
     margin-right: 35px;
@@ -549,7 +553,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
 }
 
 /* PETIT TELEPHONE */
-@media (min-width: 0px) and (max-width: 400px)
+@media (min-width: 0px) and (max-width: 450px)
 {
     h1{
         font-size: xx-large;
@@ -568,7 +572,65 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
         font-size: 40px;
     }
     .menu-items > ul > li{
-        margin-top: 35px;
+        margin-top: 45px;
+    }
+    .a_propos{
+        font-size: 20px;
+    }
+    #mes_competences > h1{
+        font-size: x-large;
+    }
+    .barre_progression{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .barre_progression > h1{
+        font-size: large;
+    }
+    .barre_progression > div > span > span{
+        font-size: small;
+    }
+    
+    .projet_container > div > a > img{
+        min-height: 200px;
+        max-height: 200px;
+        max-width: 290px;
+        min-width: 290px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 200px;
+        max-height: 200px;
+        max-width: 290px;
+        min-width: 290px;
+    }
+
+    .projet_container > div > a > p {
+        bottom: 135px;
+    }
+    .autres_projet_observer > div > p{
+        bottom: 135px;
+    }
+    .mes_projets{
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+    .mes_projets > h2{
+        margin-top: 50px;
+        font-size: x-large;
+    }
+    .mes_projets > p{
+        margin-top: 30px;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    
+    .mes_projets > div > div{
+        margin: 0px;
+    }
+    .mes_formations > .cards{
+        max-width: 240px;
+        min-height: 300px;
+        max-height: 350px;
     }
     .mes_projets > h2{
         margin-top: 75px;
@@ -576,27 +638,48 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     .mes_projets > p{
         margin-top: 50px;
         margin-bottom: 50px;
-    }
-    .projet_container > div > a > img {
-        max-width: 350px;
-        max-height: 250px;
+    }    
+    .mes_formations > .cards{
+        max-width: 200px;
+        min-width: 200px;
         min-height: 250px;
-    }
-    .projet_container > div > a > p {
-        bottom: 150px;
-    }
-    .autres_projet_observer > div > img {
-        max-width: 350px;
         max-height: 250px;
-        min-height: 250px;
     }
-    .autres_projet_observer > div > p {
-        bottom: 150px;
+    
+    .mes_formations > .cards > p{
+        font-size: 17px;
+        padding: 5px;
+    }
+    .mes_formations > .cards > i{
+        font-size: xx-large;
+    }
+    .mes_formations > .cards > h2{
+        font-size: large;
+    }
+    .mes_formations > .cards > h3{
+        font-size: medium;
+    }
+    .mes_formations > .cards:first-child{
+        margin-top: 45px;
+    }
+    .mes_formations > .cards:last-child{
+        margin-bottom: 45px;
+    }
+
+    .cv{
+        padding: 15px;
+        font-size: 4rem;
+    }
+    .carte > p{
+        font-size: large;
+    }
+    .carte > h2 {
+        font-size: large;
     }
 }
 
 /* TABLETTE */
-@media (min-width: 768px) and (max-width: 1025px)
+@media (min-width: 450px) and (max-width: 1025px)
 {
     *{
         scroll-behavior: smooth;
@@ -609,6 +692,11 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     .all{
         margin-top: 40%;
         padding-bottom: 0px;
+    }
+    .a_propos{
+        font-size: 25px;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .projet_container > div > a > img{
         min-height: 350px;
@@ -625,7 +713,56 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
         margin-left: 15%;
         margin-right: 15%;
     }
-      
+    #mes_competences > h1{
+        font-size: x-large;
+    }
+    .barre_progression{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+    .barre_progression > h1{
+        font-size: large;
+    }
+    .barre_progression > div > span > span{
+        font-size: small;
+    }
+    
+    .projet_container > div > a > img{
+        min-height: 250px;
+        max-height: 250px;
+        max-width: 400px;
+        min-width: 400px;
+    }
+    .autres_projet_observer > div > img{
+        min-height: 250px;
+        max-height: 250px;
+        max-width: 400px;
+        min-width: 400px;
+    }
+
+    .projet_container > div > a > p {
+        bottom: 155px;
+    }
+    .autres_projet_observer > div > p{
+        bottom: 155px;
+    }
+    .mes_projets{
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+    }
+    .mes_projets > h2{
+        margin-top: 50px;
+        font-size: xx-large;
+    }
+    .mes_projets > p{
+        margin-top: 40px;
+        margin-bottom: 30px;
+        font-size: x-large;
+    }
+    
+    .mes_projets > div > div{
+        margin: 0px;
+    }
     .navbar .nav-container a {
         font-size: 2rem;
     }
@@ -637,10 +774,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     }
     .mes_formations{
         align-items: center;
-    }
-    .mes_formations > .cards{
-        max-width: 450px;
-        max-height: 350px;
     }
     .cards:hover{
         box-shadow: 5px 5px 5px #7a7878;
@@ -654,14 +787,13 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     *{
         scroll-behavior: smooth;
     }
-
     .img_acceuil{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
         background-position: top 40% left 50%;
         background-size: 75%;
         background-color: #013328;
-  }
+    }
     .all{
         margin-top: 28%;
     }
@@ -701,8 +833,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
         margin-left: 15%;
         margin-right: 15%;
     }
-      
-    
     li > a{
         color: #013328;
         border-bottom: 0px solid #013328;
@@ -719,8 +849,8 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
         justify-content: space-around;
         align-items: center;
         margin-top: 30px;
-        font-size: 22px;
-        max-height: 45px;
+        font-size: 20px;
+        max-height: 30px;
       }
 
     .mes_projets > div {
@@ -748,12 +878,6 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     }
     .autres_projet_observer > div > img{
         min-height: 200px;
-    }
-    .projet_container > div > a:hover img{
-        opacity: 1 !important; 
-    }
-    .projet_container > div > a:hover p{
-        opacity: 0 !important;
     }
     .projet_container > div > a > p {
         bottom: 155px;
