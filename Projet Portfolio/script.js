@@ -128,7 +128,7 @@ const my_flix_observe = new IntersectionObserver((entries)=>{
     }
 }, {threshold: 0.95})
 
-let my_flix_observer = document.querySelector('.my_flix_observer')
+let my_flix_observer = document.querySelector('.my_flix_img')
 my_flix_observe.observe(my_flix_observer)
 
 // E-commerce
@@ -147,7 +147,7 @@ const e_commerce_observe = new IntersectionObserver((entries)=>{
     }
 }, {threshold: 0.95})
 
-let e_commerce_observer = document.querySelector('.e_commerce_observer')
+let e_commerce_observer = document.querySelector('.e_commerce_img')
 e_commerce_observe.observe(e_commerce_observer)
 
 // Autres
@@ -166,7 +166,7 @@ const autres_projet_observe = new IntersectionObserver((entries)=>{
     }
 }, {threshold: 0.95})
 
-let autres_projet_observer = document.querySelector('.autres_projet_observer')
+let autres_projet_observer = document.querySelector('.autres_projet_img')
 autres_projet_observe.observe(autres_projet_observer)
 
 function zeroTo100(){
