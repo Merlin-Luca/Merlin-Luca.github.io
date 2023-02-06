@@ -1061,13 +1061,16 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     .autres_projet_observer > div > img{
         min-height: 320px;
     }
+    .mes_projets{
+        padding-bottom: 0px;
+    }
     .mes_projets > h2{
         margin-top: 50px;
         font-size: xx-large;
     }
     .mes_projets > p{
         margin-top: 30px;
-        margin-bottom: 10px;
+        margin-bottom: 50px;
         font-size: x-large;
     }
     .mes_projets > h2{
@@ -1075,9 +1078,13 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     }
     .projet_container > div > a > img{
         min-height: 320px;
+        max-height: 320px;
+        max-width: 450px;
     }
     .autres_projet_observer > div > img{
         min-height: 320px;
+        max-height: 320px;
+        max-width: 450px;
     }
     .mes_projets > div {
         flex-direction: row;
