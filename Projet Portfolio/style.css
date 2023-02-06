@@ -1146,12 +1146,18 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
         padding-bottom: 50px;
         height: 350px;
     }
+    .cv{
+        padding: 20px;
+    }
+    .cv-container{
+        padding-bottom: 150px;
+    }
     .contact{
         padding-top: 80px;
     }
     .fontawesome{
         height: auto;
-        margin-top: 70px;
+        margin-top: 100px;
     }
     .nav-container .checkbox{
         left: 94%;
