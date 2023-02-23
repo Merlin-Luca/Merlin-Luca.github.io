@@ -91,27 +91,6 @@ function menu_Disparition()
     line3.style.marginLeft = '0px';
 }
 
-let html = document.querySelectorAll('.progressChargement');
-let progressBar = [];
-html.forEach(currentValue => {
-    progressBar.push(currentValue);
-    });
-
-let i = 15;
-let y = 15;
-let z = 15;
-let u = 15;
-
-const progressTest = new IntersectionObserver((entries)=>{
-    if(entries[0].isIntersecting){
-        zeroTo100()
-        load()
-    }
-})
-
-let competences = document.querySelector('.container-css')
-progressTest.observe(competences)
-
 // Myflix 
 const my_flix_observe = new IntersectionObserver((entries)=>{
     let my_flix_p = document.querySelector('.my-flix-p')
@@ -169,20 +148,51 @@ const autres_projet_observe = new IntersectionObserver((entries)=>{
 let autres_projet_observer = document.querySelector('.autres_projet_img')
 autres_projet_observe.observe(autres_projet_observer)
 
+
+const progressTest = new IntersectionObserver((entries)=>{
+    if(entries[0].isIntersecting){
+        zeroTo100()
+        load()
+    }
+})
+
+let competences = document.querySelector('.container-css')
+progressTest.observe(competences)
+
+let html = document.querySelectorAll('.progressChargement');
+let progressBar = [];
+html.forEach(currentValue => {
+    progressBar.push(currentValue);
+    });
+
+let i = 15;
+let y = 15;
+let z = 15;
+let u = 15;
+let php = 15;
+let mysql = 15;
+
+
 function zeroTo100(){
         if( i < 100 ) {
             progressBar[0].innerHTML = ++i + "%";
             setTimeout(zeroTo100, 16);
         }
-        if(y != 85){
+        if(y != 95){
             progressBar[1].innerHTML = ++y + "%";
         }
-        if(z != 80){
+        if(z != 90){
             progressBar[2].innerHTML = ++z + "%";
         }
-        if(u != 60){
+        if(u != 80){
             progressBar[3].innerHTML = ++u + "%";
-        } 
+        }
+        if(php != 70){
+            progressBar[4].innerHTML = ++php + "%";
+        }
+        if(mysql != 70){
+            progressBar[5].innerHTML = ++mysql + "%";
+        }
 }
 
 const progress = document.querySelectorAll('.progressbar');
@@ -195,21 +205,31 @@ let h = 45;
 let c = 40;
 let s = 45;
 let j = 38;
+let phpBis = 45;
+let mysqlBis = 25;
 function load()
 {
     if(h < 100){
         h++;
         progress[0].style.width = h+"%"
     }
-    if(c < 85){
+    if(c < 95){
         c++
         progress[1].style.width = c+"%"
-    }if(s < 80){
+    }if(s < 90){
         s++
         progress[2].style.width = s+"%"
-    }if(j < 60){
+    }if(j < 80){
         j++
         progress[3].style.width = j+"%"
+    }
+    if(phpBis < 70){
+        phpBis++
+        progress[4].style.width = phpBis+"%"
+    }
+    if(mysqlBis < 70){
+        mysqlBis++
+        progress[5].style.width = mysqlBis+"%"
     }
     setTimeout(load, 25);
 }

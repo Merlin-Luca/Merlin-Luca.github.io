@@ -347,12 +347,14 @@ i > span{
     width: 60%;
 }
 .container-php{
-    background-color: rgb(138, 138, 138);
-    width: 100%;
+    background-color: rgb(34, 34, 34);
+    color: rgb(34, 137, 226);
+    width: 30%;
 }
 .container-mysql {
-    background-color: rgb(138, 138, 138);
-    width: 100%;
+    background-color: rgb(34, 34, 34);
+    color: rgb(177, 25, 101);
+    width: 20%;
 }
 .container-nodejs {
     background-color: rgb(138, 138, 138);
