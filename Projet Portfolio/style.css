@@ -256,10 +256,7 @@ footer > div > p {
 .fontawesome a{
     color: inherit;
 }
-.twitter:hover{
-    transition: color 1s;
-    color: rgb(29, 155, 240);
-}
+
 .linkedin:hover{
     transition: color 1s;
     color: #0a66c2;
@@ -527,7 +524,7 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
       .navbar .menu-items {
         z-index: 7;
         padding-top: 120px;
-        background-color: rgb(46, 45, 45);
+        background-color: #013328;
         box-shadow: inset 0 0 20px rgb(2, 39, 19);
         font-size: 10rem;
         height: 100%;
@@ -549,7 +546,8 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
       }
       
       li > i{
-        color: rgba(221, 221, 61, 0.705);
+        color: rgb(255, 255, 255);
+        /* color: rgba(221, 221, 61, 0.705); */
       }
       .fontawesome{
         height: auto;

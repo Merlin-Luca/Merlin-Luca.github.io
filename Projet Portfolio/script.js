@@ -148,8 +148,9 @@ const autres_projet_observe = new IntersectionObserver((entries)=>{
 let autres_projet_observer = document.querySelector('.autres_projet_img')
 autres_projet_observe.observe(autres_projet_observer)
 
+// Barre compétences
 
-const progressTest = new IntersectionObserver((entries)=>{
+const progressBarIntersecting = new IntersectionObserver((entries)=>{
     if(entries[0].isIntersecting){
         zeroTo100()
         load()
@@ -157,7 +158,7 @@ const progressTest = new IntersectionObserver((entries)=>{
 })
 
 let competences = document.querySelector('.container-css')
-progressTest.observe(competences)
+progressBarIntersecting.observe(competences)
 
 let html = document.querySelectorAll('.progressChargement');
 let progressBar = [];
@@ -165,33 +166,29 @@ html.forEach(currentValue => {
     progressBar.push(currentValue);
     });
 
-let i = 15;
-let y = 15;
-let z = 15;
-let u = 15;
-let php = 15;
-let mysql = 15;
+let html_load = 15;
+let css_load = 15;
+let js_load = 15;
+let php_load = 15;
+let mysql_load = 15;
 
 
 function zeroTo100(){
-        if( i < 100 ) {
-            progressBar[0].innerHTML = ++i + "%";
+        if( html_load < 100 ) {
+            progressBar[0].innerHTML = ++html_load + "%";
             setTimeout(zeroTo100, 16);
         }
-        if(y != 95){
-            progressBar[1].innerHTML = ++y + "%";
+        if(css_load != 95){
+            progressBar[1].innerHTML = ++css_load + "%";
         }
-        if(z != 90){
-            progressBar[2].innerHTML = ++z + "%";
+        if(js_load != 80){
+            progressBar[2].innerHTML = ++js_load + "%";
         }
-        if(u != 80){
-            progressBar[3].innerHTML = ++u + "%";
+        if(php_load != 70){
+            progressBar[3].innerHTML = ++php_load + "%";
         }
-        if(php != 70){
-            progressBar[4].innerHTML = ++php + "%";
-        }
-        if(mysql != 70){
-            progressBar[5].innerHTML = ++mysql + "%";
+        if(mysql_load != 70){
+            progressBar[4].innerHTML = ++mysql_load + "%";
         }
 }
 
@@ -201,35 +198,31 @@ progress.forEach(currentValue => {
     barre.push(currentValue);
     });
 
-let h = 45;
-let c = 40;
-let s = 45;
-let j = 38;
-let phpBis = 45;
-let mysqlBis = 25;
+let html_score = 45;
+let css_score = 40;
+let js_score = 38;
+let php_score = 45;
+let mysql_score = 25;
 function load()
 {
-    if(h < 100){
-        h++;
-        progress[0].style.width = h+"%"
+    if(html_score < 100){
+        html_score++;
+        progress[0].style.width = html_score+"%"
     }
-    if(c < 95){
-        c++
-        progress[1].style.width = c+"%"
-    }if(s < 90){
-        s++
-        progress[2].style.width = s+"%"
-    }if(j < 80){
-        j++
-        progress[3].style.width = j+"%"
+    if(css_score < 95){
+        css_score++
+        progress[1].style.width = css_score+"%"
+    }if(js_score < 80){
+        js_score++
+        progress[2].style.width = js_score+"%"
     }
-    if(phpBis < 70){
-        phpBis++
-        progress[4].style.width = phpBis+"%"
+    if(php_score < 70){
+        php_score++
+        progress[3].style.width = php_score+"%"
     }
-    if(mysqlBis < 70){
-        mysqlBis++
-        progress[5].style.width = mysqlBis+"%"
+    if(mysql_score < 70){
+        mysql_score++
+        progress[4].style.width = mysql_score+"%"
     }
     setTimeout(load, 25);
 }
