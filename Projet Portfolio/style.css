@@ -1019,8 +1019,8 @@ url(./Ressources/bourse_lille.jpg) no-repeat center/cover scroll;
     .img_acceuil{
         background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
         url('./Ressources/Moi.jpg') no-repeat fixed;
-        background-position: top 40% left 50%;
-        background-size: 55%;
+        background-position: top -5% left 50%;
+        background-size: 80%;
         background-color: #013328;
     }
     .a_propos{
