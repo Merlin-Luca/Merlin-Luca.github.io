@@ -202,7 +202,7 @@ let html_score = 45;
 let css_score = 40;
 let js_score = 38;
 let php_score = 45;
-let mysql_score = 25;
+let mysql_score = 55;
 function load()
 {
     if(html_score < 100){
