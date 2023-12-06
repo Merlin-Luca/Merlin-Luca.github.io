@@ -129,6 +129,25 @@ const e_commerce_observe = new IntersectionObserver((entries)=>{
 let e_commerce_observer = document.querySelector('.e_commerce_img')
 e_commerce_observe.observe(e_commerce_observer)
 
+// asura
+const asura_projet_observe = new IntersectionObserver((entries)=>{
+    let asura_projet_p = document.querySelector('.asura_projet_p')
+    let asura_projet_img = document.querySelector('.asura_projet_img')
+    if(entries[0].isIntersecting)
+    {
+        asura_projet_p.style.opacity = "1";
+        asura_projet_img.style.opacity = "0.4";
+    }
+    else
+    {
+        asura_projet_p.style.opacity = "0";
+        asura_projet_img.style.opacity = "1";
+    }
+}, {threshold: 0.95})
+
+let asura_projet_observer = document.querySelector('.asura_projet_img')
+asura_projet_observe.observe(asura_projet_observer)
+
 // Autres
 const autres_projet_observe = new IntersectionObserver((entries)=>{
     let autres_projet_p = document.querySelector('.autres_projet_p')
@@ -146,7 +165,7 @@ const autres_projet_observe = new IntersectionObserver((entries)=>{
 }, {threshold: 0.95})
 
 let autres_projet_observer = document.querySelector('.autres_projet_img')
-autres_projet_observe.observe(autres_projet_observer)
+autres_projet_observe.observe(asura_projet_observer)
 
 // Barre compétences
 
